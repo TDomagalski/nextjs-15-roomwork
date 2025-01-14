@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
@@ -57,16 +58,15 @@
 
     @media (max-width: 768px) {
       display: none;
+      flex-basis: 100%;
       flex-direction: column;
-      position: absolute;
-      top: 100%;
       left: 0;
       right: 0;
       background: #fff;
-      border-top: 1px solid #ddd;
+      // border-top: 1px solid #ddd;
 
       li {
-        margin: 10px 0;
+        margin: 20px 0;
         text-align: center;
       }
     }
@@ -75,13 +75,5 @@
 
 // Wyświetl menu po kliknięciu przycisku
 .navbar.open .navLinks {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  display: block;
 }

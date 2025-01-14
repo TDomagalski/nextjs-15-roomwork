@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './page.module.scss';
+import styles from './navbar.module.scss';
 
 const Navbar = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${menuOpen ? styles.open : ''}`}>
       <div className={styles.logo}>
-        <Link href='/'>TwojaFirma</Link>
+        <Link href='/'>RoomWork</Link>
       </div>
       <button
         className={styles.menuToggle}
