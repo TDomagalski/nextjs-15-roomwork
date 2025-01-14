@@ -1,11 +1,11 @@
 'use client';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.scss';
 
 const Navbar = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
@@ -29,15 +29,19 @@ const Navbar = () => {
         ☰
       </button>
       <ul className={styles.navLinks}>
-        {navItems.map((item) => (
-          <li
-            key={item.path}
-            className={router.pathname === item.path ? styles.active : ''}
-            onClick={() => setMenuOpen(false)} // Zamknij menu po kliknięciu linku
-          >
-            <Link href={item.path}>{item.name}</Link>
-          </li>
-        ))}
+        {navItems.map((item) => {
+          const isActive = pathname === item.path;
+
+          return (
+            <li
+              key={item.path}
+              className={isActive ? styles.active : styles.noActive}
+              onClick={() => setMenuOpen(false)} // Zamknij menu po kliknięciu linku
+            >
+              <Link href={item.path}>{item.name}</Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
