@@ -17,9 +17,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${menuOpen ? styles.open : ''}`}>
       <div className={styles.logo}>
-        <Link onClick={() => setMenuOpen(!menuOpen)} href='/'>
-          RoomWork
-        </Link>
+        <Link href='/'>RoomWork</Link>
       </div>
       <button
         className={styles.menuToggle}

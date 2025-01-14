@@ -1,8 +1,9 @@
+import '../styles/globals.scss';
 import styles from './galeria.module.scss';
 
 export default function Galeria() {
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <h1>Galeria</h1>
     </div>
   );
