@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import '../globals.scss';
 import styles from './kwatery.module.scss';
 
 export default function Kwatery() {
