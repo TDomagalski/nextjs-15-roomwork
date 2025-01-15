@@ -1,4 +1,16 @@
-@import './variables.scss';
+// VARIABLES //////////////////////////////////////////////
+
+// Themes colors
+$theme-dark-bg: #2c3639;
+
+// Mediaqueries Breakpoints
+$breakpoint-small: 576px;
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+
+////////////////////////////////////////////////////////
 
 :root {
   --background: #ffffff;
