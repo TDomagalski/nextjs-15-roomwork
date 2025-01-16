@@ -1,9 +1,11 @@
 section.row {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 20px;
+  margin: 3rem 1rem;
+
+  &:last-of-type {
+    margin: 0 1rem 3rem 1rem;
+  }
 
   .column {
     flex-basis: 100%;
@@ -15,23 +17,35 @@ section.row {
       border-radius: 8px;
     }
 
-    h2 {
-      margin: 1rem 0;
-      font-size: 1.8rem;
-      color: #333;
-    }
+    .contact_title,
+    .contact_info {
+      margin: 2rem 0;
 
-    p {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
+      h2 {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+      }
 
-      a {
-        color: #0070f3;
-        text-decoration: none;
+      span {
+        display: block;
+        margin: 0.5rem 0;
       }
     }
+
+    .contact_info {
+      margin: 2rem 0 0 0;
+    }
+  }
+}
+
+.google_map {
+  width: 100%;
+  display: contents;
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
   }
 }
 
@@ -41,14 +55,30 @@ section.row {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 100px;
+    margin: 3rem;
+
+    &:last-of-type {
+      margin: 3rem;
+    }
 
     .column {
       flex-basis: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       // img {}
       // h2 {}
-      // p {}
+
+      .contact_info {
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  .google_map {
+    iframe {
+      height: 600px;
     }
   }
 }
