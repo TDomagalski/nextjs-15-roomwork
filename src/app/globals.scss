@@ -5,6 +5,7 @@ $theme-dark-bg: #2c3639;
 
 // Mediaqueries Breakpoints
 $breakpoint-small: 576px;
+$breakpoint-medium: 768px;
 
 // Colors
 $color-black: #000;
@@ -49,8 +50,12 @@ body {
   min-height: 100vh;
 
   // header {}
+
   main {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
   }
 
   footer {
@@ -72,4 +77,20 @@ a {
 
 .container {
   padding: 10px 20px;
+}
+
+.contactButton {
+  margin: 1rem 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 }

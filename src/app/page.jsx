@@ -6,7 +6,7 @@ import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <div className={styles.home}>
+    <>
       <section className={styles.row}>
         <div className={styles.column}>
           <h2>O nas</h2>
@@ -30,11 +30,11 @@ export default function Home() {
             Oferujemy szeroki wybór kwater pracowniczych. Odwiedź stronę
             <Link href='/kwatery'> kwatery</Link>, aby zobaczyć naszą ofertę.
           </p>
-          <Link className={styles.contactButton} href='/kontakt'>
+          <Link className='contactButton' href='/kontakt'>
             Skontaktuj się
           </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }
