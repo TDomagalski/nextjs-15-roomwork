@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: inherit;
   border-bottom: 1px solid #ddd;
   padding: 10px 20px;
 
@@ -13,7 +13,7 @@
 
     a {
       text-decoration: none;
-      color: #333;
+      color: #fff;
     }
   }
 
@@ -23,7 +23,7 @@
     border: none;
     font-size: 1.8rem;
     cursor: pointer;
-    color: black;
+    color: #fff;
     z-index: 999;
 
     @media (max-width: 768px) {
@@ -42,7 +42,7 @@
 
       a {
         text-decoration: none;
-        color: #333;
+        color: #fff;
         font-weight: 500;
 
         &:hover {
@@ -62,7 +62,7 @@
       flex-direction: column;
       left: 0;
       right: 0;
-      background: #fff;
+      // background: #fff;
       // border-top: 1px solid #ddd;
 
       li {

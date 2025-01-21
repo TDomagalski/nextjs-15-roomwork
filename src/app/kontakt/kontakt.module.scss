@@ -3,10 +3,6 @@ section.row {
   flex-direction: column;
   margin: 3rem 1rem;
 
-  &:last-of-type {
-    margin: 0 1rem 3rem 1rem;
-  }
-
   .column {
     flex-basis: 100%;
 

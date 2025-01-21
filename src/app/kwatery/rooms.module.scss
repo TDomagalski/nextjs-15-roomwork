@@ -1,0 +1,36 @@
+section.row {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
+
+  .column {
+    flex-basis: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+}
+
+// RWD dla dużych ekranów
+@media (min-width: 768px) {
+  section.row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 3rem;
+
+    &:last-of-type {
+      margin: 3rem;
+    }
+
+    .column {
+      flex-basis: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
