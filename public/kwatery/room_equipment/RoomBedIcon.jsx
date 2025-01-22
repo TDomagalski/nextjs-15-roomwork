@@ -1,6 +1,6 @@
 export default function RoomBedIcon() {
   return (
-    <svg fill='#000000' viewBox='0 0 512 512' xmlSpace='preserve'>
+    <svg viewBox='0 0 512 512' xmlSpace='preserve'>
       <g>
         <g>
           <path
