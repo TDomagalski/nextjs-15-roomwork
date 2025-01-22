@@ -11,7 +11,12 @@ export default function Rooms() {
     <>
       <section className={styles.row}>
         <div className={`${styles.column} ${styles.column_cover}`}>
-          <Image alt='Image' src='/img-mini.webp' width={268} height={178} />
+          <Image
+            alt='Image'
+            src='/kwatery/img-mini.webp'
+            width={268}
+            height={178}
+          />
         </div>
         <div className={`${styles.column} ${styles.column_info}`}>
           <div className={styles.info}>

@@ -16,13 +16,13 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.column}>
-          <Image alt='Image' src='/img.webp' width={1072} height={712} />
+          <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
         </div>
       </section>
 
       <section className={styles.row}>
         <div className={styles.column}>
-          <Image alt='Image' src='/img.webp' width={1072} height={712} />
+          <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
         </div>
         <div className={styles.column}>
           <h2>Nasze kwatery</h2>
