@@ -17,7 +17,7 @@ export default function Kontakt() {
         </div>
         <div className='title_description'>
           <div className={styles.contact_title}>
-            <h2>Kontakt</h2>
+            <h1>Kontakt</h1>
             <span>Skontaktuj się z nami</span>
           </div>
           <div className={styles.contact_info}>

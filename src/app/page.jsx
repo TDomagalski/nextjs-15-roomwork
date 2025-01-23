@@ -12,7 +12,7 @@ export default function Home() {
           <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
         </div>
         <div className='title_description'>
-          <h2>O nas</h2>
+          <h1>O nas</h1>
           <p>
             Nasza firma oferuje kwatery pracownicze w całej Polsce. Zapewniamy
             wygodne i przystępne rozwiązania dla pracowników.
@@ -20,32 +20,47 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className={styles.row}>
-        <div className={styles.column}>
-          <h2>O nas</h2>
-          <p>
-            Nasza firma oferuje kwatery pracownicze w całej Polsce. Zapewniamy
-            wygodne i przystępne rozwiązania dla pracowników.
-          </p>
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.segment}>
+            <Image
+              alt='Image'
+              src='/global/img.webp'
+              width={1072}
+              height={712}
+            />
+          </div>
+          <div className={styles.segment}>
+            <h2>Nasze kwatery</h2>
+            <p>
+              Oferujemy szeroki wybór kwater pracowniczych. Odwiedź stronę
+              <Link href='/kwatery'> kwatery</Link>, aby zobaczyć naszą ofertę.
+            </p>
+            <Link className='contactButton' href='/kontakt'>
+              Skontaktuj się
+            </Link>
+          </div>
         </div>
-        <div className={styles.column}>
-          <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
-        </div>
-      </section> */}
 
-      <section className={styles.row}>
-        <div className={styles.column}>
-          <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
-        </div>
-        <div className={styles.column}>
-          <h2>Nasze kwatery</h2>
-          <p>
-            Oferujemy szeroki wybór kwater pracowniczych. Odwiedź stronę
-            <Link href='/kwatery'> kwatery</Link>, aby zobaczyć naszą ofertę.
-          </p>
-          <Link className='contactButton' href='/kontakt'>
-            Skontaktuj się
-          </Link>
+        <div className={styles.container}>
+          <div className={styles.segment}>
+            <Image
+              alt='Image'
+              src='/global/img.webp'
+              width={1072}
+              height={712}
+            />
+          </div>
+          <div className={styles.segment}>
+            <h2>Nasze kwatery</h2>
+            <p>
+              Oferujemy szeroki wybór kwater pracowniczych. Odwiedź stronę
+              <Link href='/kwatery'> kwatery</Link>, aby zobaczyć naszą ofertę.
+            </p>
+            <Link className='contactButton' href='/kontakt'>
+              Skontaktuj się
+            </Link>
+          </div>
         </div>
       </section>
     </>
