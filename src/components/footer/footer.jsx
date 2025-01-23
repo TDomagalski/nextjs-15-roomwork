@@ -4,6 +4,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <h1>footer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   );
 }

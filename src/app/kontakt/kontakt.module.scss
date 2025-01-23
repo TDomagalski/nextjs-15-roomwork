@@ -46,7 +46,7 @@ section.row {
 }
 
 // RWD dla dużych ekranów
-@media (min-width: 768px) {
+@media (min-width: var(--breakpointMedium)) {
   section.row {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -62,6 +62,7 @@ section.row {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
 
       // img {}
       // h2 {}

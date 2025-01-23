@@ -1,5 +1,3 @@
-@use '../variables';
-
 section.row {
   display: flex;
   flex-direction: column;
@@ -43,23 +41,36 @@ section.row {
 
   .column_info {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
     margin: 2rem 0;
 
-    > div {
-      flex-basis: 15%;
+    .info_icons {
+      flex-basis: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
 
-      svg {
-        fill: #fff;
-      }
+      > div {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      span {
-        margin-top: 0.5rem;
+        svg {
+          fill: #fff;
+        }
+
+        span {
+          margin-top: 0.5rem;
+        }
       }
+    }
+
+    .info_description {
+      text-align: justify;
+      padding: 0.5rem;
     }
   }
 
@@ -71,7 +82,7 @@ section.row {
 }
 
 // RWD dla dużych ekranów
-@media (min-width: variables.$breakpoint-medium) {
+@media (min-width: var(--breakpointMedium)) {
   section.row {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -88,6 +99,65 @@ section.row {
       img {
         width: 100%;
       }
+    }
+
+    .column {
+      flex-basis: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      // img {}
+      // h2 {}
+
+      // p {
+      //   a {
+      //     &:hover {
+      //       text-decoration: underline;
+      //     }
+      //   }
+      // }
+    }
+
+    .column_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+
+      .info_icons {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        > div {
+          width: 15%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          svg {
+            fill: #fff;
+          }
+
+          span {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+
+      .info_description {
+        text-align: justify;
+        padding: 0.5rem;
+      }
+    }
+
+    .column_more_info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

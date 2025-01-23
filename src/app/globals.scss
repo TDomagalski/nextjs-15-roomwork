@@ -1,9 +1,22 @@
-@use './variables';
-
 :root {
+  // VARIABLES
+  //main
   --background: #eef0f1;
   --foreground: #171717;
+
+  // colors
+  --colorBlack: #000;
+  --colorHBlack: #555;
+  --colorWhite: #fff;
+
+  // fonts
   font-size: 22px;
+
+  // media queries
+  --breakpointSmall: 576px;
+  --breakpointMedium: 768px;
+  --breakpointLarge: 992px;
+  --breakpointExtraLarge: 1200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,11 +55,50 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex: 1;
+
+    .container_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 2rem;
+
+      .title_description {
+        flex-basis: 100%;
+
+        h2 {
+          margin: 1rem 0;
+          font-size: 1.8rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          font-size: 1rem;
+          line-height: 1.6;
+
+          a {
+            color: #0070f3;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .title_image {
+        flex-basis: 100%;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+      }
+    }
   }
 
   footer {
-    background-color: variables.$color-white;
+    background: var(--foreground);
+    color: var(--background);
   }
 }
 
@@ -62,18 +114,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: variables.$color-h-black;
+  color: var(--colorHBlack);
 }
-
-// p {}
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.container {
-  padding: 1rem 2rem;
 }
 
 .contactButton,
@@ -82,7 +128,7 @@ a {
   // margin: 1rem 0;
   display: block;
   padding: 0.5rem 1rem;
-  color: variables.$color-white;
+  color: var(--colorWhite);
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -91,6 +137,7 @@ a {
   cursor: pointer;
 }
 
+// BUTTONS
 .contactButton {
   background-color: #0070f3;
 
@@ -104,5 +151,24 @@ a {
 
   &:hover {
     background-color: rgb(82, 165, 82);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    main {
+      .container_title {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .title_image {
+          flex-basis: 45%;
+        }
+        .title_description {
+          flex-basis: 45%;
+        }
+      }
+    }
   }
 }

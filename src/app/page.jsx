@@ -7,7 +7,20 @@ import styles from './page.module.scss';
 export default function Home() {
   return (
     <>
-      <section className={styles.row}>
+      <section className='container_title'>
+        <div className='title_image'>
+          <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
+        </div>
+        <div className='title_description'>
+          <h2>O nas</h2>
+          <p>
+            Nasza firma oferuje kwatery pracownicze w całej Polsce. Zapewniamy
+            wygodne i przystępne rozwiązania dla pracowników.
+          </p>
+        </div>
+      </section>
+
+      {/* <section className={styles.row}>
         <div className={styles.column}>
           <h2>O nas</h2>
           <p>
@@ -18,7 +31,7 @@ export default function Home() {
         <div className={styles.column}>
           <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.row}>
         <div className={styles.column}>
