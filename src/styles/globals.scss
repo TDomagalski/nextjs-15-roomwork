@@ -1,60 +1,17 @@
+// w pliku _index.scss forwordowałem wszystkie pliki ze stylami. Zabieg ten pozwolił mi na nie powielanie @use.
+
 @use './index' as *;
 
-:root {
-  --background: $backgroundLight;
-  --foreground: $backgroundDark;
-
-  // fonts
-  font-size: $fontSizeRoot;
-}
-
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: $backgroundDark;
-    --foreground: $backgroundLight;
+  html,
+  body {
+    background-color: $backgroundDark;
   }
-
-  // html {
-  //   color-scheme: dark;
-  // }
-}
-
-html,
-body {
-  color-scheme: dark;
-  min-height: 100vh;
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $colorHBlack;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: $colorWhite;
+  font-family: $fontFamilyDefault;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -63,121 +20,58 @@ body {
   justify-content: space-between;
   min-height: 100vh;
 
+  // header,
+  // main,
+  // footer {}
+
   // header {}
+  // main {}
+  // footer {}
 
-  main {
-    .container {
-      width: 100%;
-      margin: auto;
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-
-    .container_title {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: stretch;
-      margin: 3rem 2rem;
-
-      .title_description {
-        flex-basis: 100%;
-
-        h1 {
-          margin: 1rem 0;
-          font-size: 2.4rem;
-        }
-
-        p {
-          margin-bottom: 1rem;
-          font-size: 1rem;
-          line-height: 1.6;
-
-          a {
-            color: #0070f3;
-            text-decoration: none;
-          }
-        }
-      }
-
-      .title_image {
-        flex-basis: 100%;
-
-        img {
-          width: 100%;
-          max-width: 100%;
-          height: auto;
-          border-radius: 8px;
-        }
-      }
-    }
-  }
-
-  footer {
-    background: var(--foreground);
-    color: var(--background);
+  .container {
+    width: 100%;
+    margin: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
 @media (min-width: 640px) {
   body {
-    main {
-      .container {
-        max-width: 640px;
-      }
+    .container {
+      max-width: 640px;
     }
   }
 }
 
 @media (min-width: 768px) {
   body {
-    main {
-      .container {
-        max-width: 768px;
-      }
-
-      .container_title {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-        .title_image {
-          flex-basis: 45%;
-        }
-        .title_description {
-          flex-basis: 45%;
-        }
-      }
+    .container {
+      max-width: 768px;
     }
   }
 }
 
 @media (min-width: 1024px) {
   body {
-    main {
-      .container {
-        max-width: 1024px;
-      }
+    .container {
+      max-width: 1024px;
     }
   }
 }
 
 @media (min-width: 1280px) {
   body {
-    main {
-      .container {
-        max-width: 1280px;
-      }
+    .container {
+      max-width: 1280px;
     }
   }
 }
 
 @media (min-width: 1536px) {
   body {
-    main {
-      .container {
-        max-width: 1536px;
-      }
+    .container {
+      max-width: 1536px;
     }
   }
 }

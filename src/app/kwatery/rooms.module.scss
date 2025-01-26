@@ -1,1 +1,7 @@
+@use '../../styles/utilities/variables' as vars;
 
+.rooms {
+  h1 {
+    color: vars.$colorBlack;
+  }
+}
