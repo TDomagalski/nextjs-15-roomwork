@@ -7,28 +7,7 @@ export default function Kontakt() {
   return (
     <>
       <div className='container'>
-        <section className='container_title'>
-          <div className='title_image'>
-            <Image
-              alt='Image'
-              src='/kontakt/img.webp'
-              width={1072}
-              height={712}
-            />
-          </div>
-          <div className='title_description'>
-            <div className={styles.contact_title}>
-              <h1>Kontakt</h1>
-              <span>Skontaktuj się z nami</span>
-            </div>
-            <div className={styles.contact_info}>
-              <h3>Family Party Sp. z o.o.</h3>
-              <span>ul. Krakowska 62d,</span>
-              <span>32-090 Słomniki</span>
-              <span>NIP: 682-177-77-38</span>
-            </div>
-          </div>
-        </section>
+        <h1>Kontakt</h1>
       </div>
       <div className={styles.google_map}>
         <iframe
