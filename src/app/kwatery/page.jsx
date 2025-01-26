@@ -5,7 +5,7 @@ import RoomBedIcon from '@public/kwatery/room_equipment/RoomBedIcon';
 import RoomDoubleBedIcon from '@public/kwatery/room_equipment/RoomDoubleBedIcon';
 import RoomBathroomIcon from '@public/kwatery/room_equipment/RoomBathroomIcon';
 
-import '../globals.scss';
+import '../../styles/globals.scss';
 import styles from './rooms.module.scss';
 
 export default function Rooms() {

@@ -1,0 +1,9 @@
+// Forward bazowych stylów
+@forward './base/reset';
+@forward './base/typography';
+
+// Forward komponentów
+@forward './components/buttons';
+
+// Forward zmiennych, mixinów, funkcji
+@forward './utilities/variables';

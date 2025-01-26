@@ -1,0 +1,29 @@
+.contactButton,
+.infoButton {
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+// BUTTONS
+.contactButton {
+  background-color: #0070f3;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.infoButton {
+  background-color: green;
+
+  &:hover {
+    background-color: rgb(82, 165, 82);
+  }
+}
