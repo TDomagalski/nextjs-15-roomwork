@@ -6,7 +6,7 @@ import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <>
+    <div className='container'>
       <section className='container_title'>
         <div className='title_image'>
           <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
@@ -63,6 +63,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

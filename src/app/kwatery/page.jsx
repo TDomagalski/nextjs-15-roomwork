@@ -10,7 +10,7 @@ import styles from './rooms.module.scss';
 
 export default function Rooms() {
   return (
-    <>
+    <div className='container'>
       <section className='container_title'>
         <div className='title_image'>
           <Image alt='Image' src='/global/img.webp' width={1072} height={712} />
@@ -75,6 +75,6 @@ export default function Rooms() {
         <div className={styles.grid_item}>5</div>
         <div className={styles.grid_item}>6</div>
       </div>
-    </>
+    </div>
   );
 }

@@ -66,9 +66,12 @@ body {
   // header {}
 
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    .container {
+      width: 100%;
+      margin: auto;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
 
     .container_title {
       display: flex;
@@ -116,9 +119,23 @@ body {
   }
 }
 
+@media (min-width: 640px) {
+  body {
+    main {
+      .container {
+        max-width: 640px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   body {
     main {
+      .container {
+        max-width: 768px;
+      }
+
       .container_title {
         flex-direction: row;
         justify-content: space-around;
@@ -130,6 +147,36 @@ body {
         .title_description {
           flex-basis: 45%;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    main {
+      .container {
+        max-width: 1024px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    main {
+      .container {
+        max-width: 1280px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    main {
+      .container {
+        max-width: 1536px;
       }
     }
   }
