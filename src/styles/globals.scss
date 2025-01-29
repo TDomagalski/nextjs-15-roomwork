@@ -23,9 +23,13 @@ body {
   // main,
   // footer {}
 
-  // header {}
+  header {
+    border-bottom: 1px solid $colorBorder;
+  }
   // main {}
-  // footer {}
+  footer {
+    border-top: 1px solid $colorBorder;
+  }
 
   .container {
     width: 100%;
@@ -78,6 +82,7 @@ body {
   }
 }
 
+// MEDIA QUERIES
 @media (min-width: 640px) {
   body {
     .container {
@@ -106,6 +111,7 @@ body {
 
           .box {
             position: absolute;
+            inset-inline-end: -12rem;
           }
         }
 
@@ -135,6 +141,7 @@ body {
 
           .box {
             height: 300px;
+            inset-inline-end: -14rem;
           }
         }
 
@@ -167,7 +174,9 @@ body {
             }
             // p {}
           }
-          // .box {}
+          .box {
+            inset-inline-end: -20rem;
+          }
         }
         // .page_img {
         //   img { }

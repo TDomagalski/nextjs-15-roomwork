@@ -1,29 +1,28 @@
-.contactButton,
-.infoButton {
-  font-size: 1rem;
-  display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2;
-  transition: 0.3s;
-  cursor: pointer;
-}
+@use '../../styles/utilities/variables' as vars;
 
-// BUTTONS
-.contactButton {
-  background-color: #0070f3;
+.room_button {
+  text-align: center;
 
-  &:hover {
-    background-color: #0056b3;
+  button {
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: vars.$colorBlack;
+    background-color: vars.$colorWhite;
+    border: none;
+    box-shadow: none;
+    font-weight: 700;
+    transition: 0.2s;
+    cursor: pointer;
   }
 }
 
-.infoButton {
-  background-color: green;
-
-  &:hover {
-    background-color: rgb(82, 165, 82);
+@media (min-width: 640px) {
+  .room_button {
+    button {
+      &:hover {
+        color: vars.$colorWhite;
+        background-color: vars.$colorBlack;
+      }
+    }
   }
 }
