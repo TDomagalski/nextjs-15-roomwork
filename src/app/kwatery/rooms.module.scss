@@ -1,7 +1,88 @@
 @use '../../styles/utilities/variables' as vars;
 
-.rooms {
-  h1 {
-    color: vars.$colorBlack;
+.container_flex {
+  margin: 2rem 0;
+
+  .rooms {
+    .room {
+      align-items: stretch;
+      margin: 4rem 0;
+      padding: 0.5rem;
+      border: 1px solid vars.$colorWhite;
+      border-radius: 8px;
+
+      .room_img {
+        margin-bottom: 1rem;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+      }
+
+      .room_info {
+        text-align: center;
+
+        .info_title {
+          margin-bottom: 0.5rem;
+          letter-spacing: 2.5px;
+        }
+
+        .info_icons {
+          display: flex;
+          justify-content: space-around;
+          align-items: stretch;
+
+          .info_icon_box {
+            flex-basis: 25%;
+
+            .info_icon {
+              svg {
+                fill: vars.$colorWhite;
+                margin-bottom: 0.2rem;
+                width: 1.5rem;
+              }
+
+              .span_container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                  font-size: 0.5rem;
+
+                  &:first-of-type {
+                    margin-right: 0.2rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .room_button {
+        text-align: center;
+
+        button {
+          margin-top: 1rem;
+          padding: 0.5rem 1.5rem;
+          color: vars.$colorBlack;
+          background-color: vars.$colorWhite;
+          border: none;
+          box-shadow: none;
+          font-weight: 700;
+          transition: 0.2s;
+          cursor: pointer;
+
+          &:hover {
+            color: vars.$colorWhite;
+            background-color: vars.$colorBlack;
+          }
+        }
+      }
+    }
   }
 }
