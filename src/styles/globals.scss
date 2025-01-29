@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
 
   // header,
   // main,
@@ -30,9 +29,54 @@ body {
 
   .container {
     width: 100%;
+    position: relative;
     margin: auto;
     padding-right: 1rem;
     padding-left: 1rem;
+
+    .top_page {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+
+      .page_title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 300px;
+
+        .text {
+          position: absolute;
+          display: inline-flex;
+          width: 300px;
+          padding: 1rem;
+          z-index: 999;
+
+          h1 {
+            font-size: 1.2rem;
+          }
+          // p {}
+        }
+
+        .box {
+          width: 1200px;
+          height: 200px;
+          position: absolute;
+          background-color: rgb(6, 182, 212);
+          inset-inline-end: -6rem;
+        }
+      }
+
+      .page_img {
+        background-color: blue;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
   }
 }
 
@@ -48,6 +92,29 @@ body {
   body {
     .container {
       max-width: 768px;
+
+      .top_page {
+        .page_title {
+          height: auto;
+
+          .text {
+            width: 400px;
+
+            h1 {
+              font-size: 1.5rem;
+            }
+            // p {}
+          }
+
+          .box {
+            position: absolute;
+          }
+        }
+
+        // .page_img {
+        //   img { }
+        // }
+      }
     }
   }
 }
@@ -56,6 +123,27 @@ body {
   body {
     .container {
       max-width: 1024px;
+
+      .top_page {
+        .page_title {
+          .text {
+            width: 500px;
+
+            h1 {
+              font-size: 2rem;
+            }
+            // p {}
+          }
+
+          .box {
+            height: 300px;
+          }
+        }
+
+        // .page_img {
+        //   img { }
+        // }
+      }
     }
   }
 }
@@ -72,6 +160,21 @@ body {
   body {
     .container {
       max-width: 1536px;
+      .top_page {
+        .page_title {
+          .text {
+            width: 800px;
+            h1 {
+              font-size: 3rem;
+            }
+            // p {}
+          }
+          // .box {}
+        }
+        // .page_img {
+        //   img { }
+        // }
+      }
     }
   }
 }
