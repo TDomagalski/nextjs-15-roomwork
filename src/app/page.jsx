@@ -13,7 +13,12 @@ export default function Home() {
           <div className='box'></div>
         </div>
         <div className='page_img'>
-          <Image src='/global/img.webp' alt='img' width={100} height={100} />
+          <Image
+            src='/global/top_page.webp'
+            alt='img'
+            width={1848}
+            height={1232}
+          />
         </div>
       </div>
     </div>

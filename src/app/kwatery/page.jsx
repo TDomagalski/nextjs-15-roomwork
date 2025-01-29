@@ -19,7 +19,7 @@ export default function Rooms() {
           <div className='box'></div>
         </div>
         <div className='page_img'>
-          <Image src='/global/img.webp' alt='img' width={100} height={100} />
+          <Image src='/global/img.webp' alt='img' width={1072} height={712} />
         </div>
       </div>
     </div>
