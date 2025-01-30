@@ -1,3 +1,6 @@
+import { rooms } from '../data/rooms';
+import RoomCard from '@components/roomCard/RoomCard';
+
 import RoomPersonIcon from '@public/kwatery/room_equipment/RoomPersonIcon';
 import RoomBedIcon from '@public/kwatery/room_equipment/RoomBedIcon';
 import RoomDoubleBedIcon from '@public/kwatery/room_equipment/RoomDoubleBedIcon';
@@ -29,67 +32,17 @@ export default function Rooms() {
 
       <div className={styles.container_flex}>
         <div className={styles.rooms}>
-          <div className={styles.room}>
-            <div className={styles.room_img}>
-              <Image
-                src='/global/img.webp'
-                alt='img'
-                width={1072}
-                height={712}
-              />
-            </div>
-            <div className={styles.room_info}>
-              <div className={styles.info_title}>
-                <h3>Kwatera 1</h3>
-              </div>
-              <div className={styles.info_icons}>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomPersonIcon />
-                    <div className={styles.span_container}>
-                      <span>3 - 4</span>
-                      <span>osoby</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBedIcon />
-                    <div className={styles.span_container}>
-                      <span>2</span>
-                      <span>łóżka</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomDoubleBedIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>piętrowe łóżko</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBathroomIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>łazienka</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.info_description}>
-                <p>Byku, tak to ma być?</p>
-              </div>
-              <div className={styles.room_button}>
-                <button>Szczegóły</button>
-              </div>
-            </div>
-          </div>
+          {rooms.map((room) => (
+            <RoomCard
+              key={room.id}
+              name={room.name}
+              image={room.image}
+              description={room.description}
+              details={room.details}
+            />
+          ))}
 
-          <div className={styles.room}>
+          {/* <div className={styles.room}>
             <div className={styles.room_img}>
               <Image
                 src='/global/img.webp'
@@ -147,187 +100,7 @@ export default function Rooms() {
                 <button>Szczegóły</button>
               </div>
             </div>
-          </div>
-
-          <div className={styles.room}>
-            <div className={styles.room_img}>
-              <Image
-                src='/global/img.webp'
-                alt='img'
-                width={1072}
-                height={712}
-              />
-            </div>
-            <div className={styles.room_info}>
-              <div className={styles.info_title}>
-                <h3>Kwatera 1</h3>
-              </div>
-              <div className={styles.info_icons}>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomPersonIcon />
-                    <div className={styles.span_container}>
-                      <span>3 - 4</span>
-                      <span>osoby</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBedIcon />
-                    <div className={styles.span_container}>
-                      <span>2</span>
-                      <span>łóżka</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomDoubleBedIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>piętrowe łóżko</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBathroomIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>łazienka</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.info_description}>
-                <p>Byku, tak to ma być?</p>
-              </div>
-              <div className={styles.room_button}>
-                <button>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.room}>
-            <div className={styles.room_img}>
-              <Image
-                src='/global/img.webp'
-                alt='img'
-                width={1072}
-                height={712}
-              />
-            </div>
-            <div className={styles.room_info}>
-              <div className={styles.info_title}>
-                <h3>Kwatera 1</h3>
-              </div>
-              <div className={styles.info_icons}>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomPersonIcon />
-                    <div className={styles.span_container}>
-                      <span>3 - 4</span>
-                      <span>osoby</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBedIcon />
-                    <div className={styles.span_container}>
-                      <span>2</span>
-                      <span>łóżka</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomDoubleBedIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>piętrowe łóżko</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBathroomIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>łazienka</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.info_description}>
-                <p>Byku, tak to ma być?</p>
-              </div>
-              <div className={styles.room_button}>
-                <button>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.room}>
-            <div className={styles.room_img}>
-              <Image
-                src='/global/img.webp'
-                alt='img'
-                width={1072}
-                height={712}
-              />
-            </div>
-            <div className={styles.room_info}>
-              <div className={styles.info_title}>
-                <h3>Kwatera 1</h3>
-              </div>
-              <div className={styles.info_icons}>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomPersonIcon />
-                    <div className={styles.span_container}>
-                      <span>3 - 4</span>
-                      <span>osoby</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBedIcon />
-                    <div className={styles.span_container}>
-                      <span>2</span>
-                      <span>łóżka</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomDoubleBedIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>piętrowe łóżko</span>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.info_icon_box}>
-                  <div className={styles.info_icon}>
-                    <RoomBathroomIcon />
-                    <div className={styles.span_container}>
-                      <span>1</span>
-                      <span>łazienka</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.info_description}>
-                <p>Byku, tak to ma być?</p>
-              </div>
-              <div className={styles.room_button}>
-                <button>Szczegóły</button>
-              </div>
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

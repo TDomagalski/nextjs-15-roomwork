@@ -1,0 +1,144 @@
+@use '../../styles/utilities/variables' as vars;
+
+.room {
+  margin: 2rem 0;
+  padding: 0.5rem;
+  background-color: #0f172a;
+  border: 1px solid rgb(113, 189, 229);
+  border-radius: 1.5rem;
+
+  .room_img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      border-radius: 1rem;
+    }
+  }
+
+  .room_info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .info_title {
+      margin: 0.5rem 0;
+      letter-spacing: 2.5px;
+    }
+
+    .info_icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-grow: 1;
+
+      .info_icon_box {
+        flex-basis: 25%;
+
+        .info_icon {
+          svg {
+            fill: vars.$colorWhite;
+            margin-bottom: 0.2rem;
+            width: 1.5rem;
+          }
+
+          .span_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+              font-size: 0.5rem;
+
+              &:first-of-type {
+                margin-right: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .info_description {
+      flex-grow: 1;
+      margin: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .room_button {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+// ~~ MEDIA QUERIES
+@media (min-width: 640px) {
+  .room {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+
+    .room_img {
+      margin-bottom: 0;
+      height: auto;
+
+      // img {}
+    }
+
+    // .room_info {
+    //   .info_title {}
+    //   .info_icons {
+    //     .info_icon_box {
+    //       .info_icon {
+    //         svg {}
+    //         .span_container {
+    //           span {}
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+
+// @media (min-width: 768px) {}
+// @media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {
+  .room {
+    margin: 0;
+
+    // .room_img {
+    //   img {}
+    // }
+
+    // .room_info {
+    //   .info_title {}
+    //   .info_icons {
+    //     .info_icon_box {
+    //       .info_icon {
+    //         svg {}
+    //         .span_container {
+    //           span {}
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    // .room_button {
+    //   button {}
+    // }
+  }
+}
+// @media (min-width: 1536px) {}
