@@ -18,7 +18,9 @@ const Navbar = () => {
     <div className='container'>
       <nav className={`${styles.navbar} ${menuOpen ? styles.open : ''}`}>
         <div className={styles.logo}>
-          <Link href='/'>RoomWork</Link>
+          <Link href='/' onClick={() => setMenuOpen(false)}>
+            RoomWork
+          </Link>
         </div>
         <button
           className={styles.menuToggle}
