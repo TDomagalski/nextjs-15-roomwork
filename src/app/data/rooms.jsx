@@ -83,4 +83,16 @@ export const rooms = [
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
+  {
+    id: 8,
+    name: 'Kwatera 8',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 8.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
+      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
+    ],
+  },
 ];

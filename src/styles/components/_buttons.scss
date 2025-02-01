@@ -7,7 +7,7 @@
     padding: 0.5rem 1.5rem;
     color: vars.$colorBlack;
     background-color: vars.$colorWhite;
-    border: none;
+    border: 1px solid vars.$colorBlack;
     box-shadow: none;
     font-weight: 700;
     transition: 0.2s;
@@ -21,6 +21,7 @@
       &:hover {
         color: vars.$colorWhite;
         background-color: vars.$colorBlack;
+        border: 1px solid vars.$colorWhite;
       }
     }
   }
