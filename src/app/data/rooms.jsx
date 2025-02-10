@@ -1,7 +1,7 @@
 export const rooms = [
   {
     id: 1,
-    name: 'Kwatera 1',
+    name: 'Kwatera 1 na piętrze',
     image: '/global/img.webp',
     description: 'Byku, tak to ma być?',
     details: [
@@ -13,7 +13,7 @@ export const rooms = [
   },
   {
     id: 2,
-    name: 'Kwatera 2',
+    name: 'Kwatera 2 na piętrze',
     image: '/global/img.webp',
     description: 'Inny opis dla kwatery 2.',
     details: [
@@ -25,7 +25,64 @@ export const rooms = [
   },
   {
     id: 3,
-    name: 'Kwatera 3',
+    name: 'Kwatera 3 na piętrze',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 3.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '2 - 3', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '1', label: 'łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Kwatera 4 na piętrze',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 4.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '2', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
+      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Kwatera 5 na piętrze',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 5.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '2', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Kwatera 1 na parterze',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 1.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
+    ],
+  },
+  {
+    id: 7,
+    name: 'Kwatera 2 na parterze',
+    image: '/global/img.webp',
+    description: 'Inny opis dla kwatery 2.',
+    details: [
+      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
+      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Kwatera 3 na parterze',
     image: '/global/img.webp',
     description: 'Inny opis dla kwatery 3.',
     details: [
@@ -36,8 +93,8 @@ export const rooms = [
     ],
   },
   {
-    id: 4,
-    name: 'Kwatera 4',
+    id: 9,
+    name: 'Kwatera 4 na parterze',
     image: '/global/img.webp',
     description: 'Inny opis dla kwatery 4.',
     details: [
@@ -48,8 +105,8 @@ export const rooms = [
     ],
   },
   {
-    id: 5,
-    name: 'Kwatera 5',
+    id: 10,
+    name: 'Kwatera 5 na parterze',
     image: '/global/img.webp',
     description: 'Inny opis dla kwatery 5.',
     details: [
@@ -60,38 +117,13 @@ export const rooms = [
     ],
   },
   {
-    id: 6,
-    name: 'Kwatera 6',
+    id: 11,
+    name: 'Kwatera 6 na parterze',
     image: '/global/img.webp',
     description: 'Inny opis dla kwatery 6.',
     details: [
-      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
-      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
-      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
-    ],
-  },
-  {
-    id: 7,
-    name: 'Kwatera 7',
-    image: '/global/img.webp',
-    description: 'Inny opis dla kwatery 7.',
-    details: [
-      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
-      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
-      { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
-    ],
-  },
-  {
-    id: 8,
-    name: 'Kwatera 8',
-    image: '/global/img.webp',
-    description: 'Inny opis dla kwatery 8.',
-    details: [
-      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
-      { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomPersonIcon', value: '6 - 8', label: 'osoby' },
+      { icon: 'RoomBunkBedIcon', value: '4', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
