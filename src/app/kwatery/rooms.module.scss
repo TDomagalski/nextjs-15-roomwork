@@ -5,7 +5,12 @@
   margin: 2rem 0;
   padding: 1rem;
   background-color: #0c1222;
-  border-radius: 1.5rem;
+
+  .rooms_title {
+    h2 {
+      font-size: 0.9rem;
+    }
+  }
 
   // .rooms {}
 }
@@ -14,6 +19,9 @@
 @media (min-width: 640px) {
   .container_flex {
     padding: 2rem;
+    border-radius: 1.5rem;
+
+    // .rooms_title {}
 
     // .rooms {}
   }
@@ -24,6 +32,8 @@
 
 @media (min-width: 1280px) {
   .container_flex {
+    // .rooms_title {}
+
     .rooms {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

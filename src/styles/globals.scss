@@ -35,8 +35,6 @@ body {
     width: 100%;
     position: relative;
     margin: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
 
     .top_page {
       position: relative;
@@ -87,6 +85,8 @@ body {
   body {
     .container {
       max-width: 640px;
+      padding-right: 1rem;
+      padding-left: 1rem;
     }
   }
 }

@@ -26,6 +26,9 @@ export default function Rooms() {
       </div>
 
       <div className={styles.container_flex}>
+        <div className={styles.rooms_title}>
+          <h2>Znajdź coś dla siebie</h2>
+        </div>
         <div className={styles.rooms}>
           {rooms.map((room) => (
             <RoomCard
