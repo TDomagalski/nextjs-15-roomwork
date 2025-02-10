@@ -3,9 +3,10 @@ export const rooms = [
     id: 1,
     name: 'Kwatera 1 na piętrze',
     image: '/global/img.webp',
+    personRange: '3',
     description: 'Byku, tak to ma być?',
     details: [
-      { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
+      { icon: 'RoomPersonIcon', value: '3', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
       { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
@@ -15,6 +16,7 @@ export const rooms = [
     id: 2,
     name: 'Kwatera 2 na piętrze',
     image: '/global/img.webp',
+    personRange: '2 - 3',
     description: 'Inny opis dla kwatery 2.',
     details: [
       { icon: 'RoomPersonIcon', value: '2 - 3', label: 'osoby' },
@@ -27,6 +29,7 @@ export const rooms = [
     id: 3,
     name: 'Kwatera 3 na piętrze',
     image: '/global/img.webp',
+    personRange: '2 - 3',
     description: 'Inny opis dla kwatery 3.',
     details: [
       { icon: 'RoomPersonIcon', value: '2 - 3', label: 'osoby' },
@@ -39,6 +42,7 @@ export const rooms = [
     id: 4,
     name: 'Kwatera 4 na piętrze',
     image: '/global/img.webp',
+    personRange: '2',
     description: 'Inny opis dla kwatery 4.',
     details: [
       { icon: 'RoomPersonIcon', value: '2', label: 'osoby' },
@@ -50,6 +54,7 @@ export const rooms = [
     id: 5,
     name: 'Kwatera 5 na piętrze',
     image: '/global/img.webp',
+    personRange: '2',
     description: 'Inny opis dla kwatery 5.',
     details: [
       { icon: 'RoomPersonIcon', value: '2', label: 'osoby' },
@@ -60,6 +65,7 @@ export const rooms = [
     id: 6,
     name: 'Kwatera 1 na parterze',
     image: '/global/img.webp',
+    personRange: '3 - 4',
     description: 'Inny opis dla kwatery 1.',
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
@@ -72,6 +78,7 @@ export const rooms = [
     id: 7,
     name: 'Kwatera 2 na parterze',
     image: '/global/img.webp',
+    personRange: '3 - 4',
     description: 'Inny opis dla kwatery 2.',
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
@@ -84,6 +91,7 @@ export const rooms = [
     id: 8,
     name: 'Kwatera 3 na parterze',
     image: '/global/img.webp',
+    personRange: '3 - 4',
     description: 'Inny opis dla kwatery 3.',
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
@@ -96,6 +104,7 @@ export const rooms = [
     id: 9,
     name: 'Kwatera 4 na parterze',
     image: '/global/img.webp',
+    personRange: '3 - 4',
     description: 'Inny opis dla kwatery 4.',
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
@@ -108,6 +117,7 @@ export const rooms = [
     id: 10,
     name: 'Kwatera 5 na parterze',
     image: '/global/img.webp',
+    personRange: '3 - 4',
     description: 'Inny opis dla kwatery 5.',
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
@@ -120,6 +130,7 @@ export const rooms = [
     id: 11,
     name: 'Kwatera 6 na parterze',
     image: '/global/img.webp',
+    personRange: '6 - 8',
     description: 'Inny opis dla kwatery 6.',
     details: [
       { icon: 'RoomPersonIcon', value: '6 - 8', label: 'osoby' },

@@ -55,6 +55,7 @@ export default function RoomCard({ name, image, description, details }) {
 RoomCard.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  personRange: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   details: PropTypes.arrayOf(
     PropTypes.shape({

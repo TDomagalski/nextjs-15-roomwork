@@ -1,10 +1,21 @@
+'use client';
+
+import { useState } from 'react';
 import { rooms } from '../data/rooms';
-import RoomCard from '@components/roomCard/RoomCard';
+import RoomCard from '@components/rooms/roomCard/RoomCard';
+import RoomFilter from '@components/rooms/roomFilter/roomFilter';
 
 import styles from './rooms.module.scss';
 import Image from 'next/image';
 
 export default function Rooms() {
+  const [filteredPersons, setFilteredPersons] = useState(null);
+
+  // Filtrowanie dokładnie według `personRange`
+  const filteredRooms = filteredPersons
+    ? rooms.filter((room) => room.personRange === filteredPersons) // Dokładne dopasowanie
+    : rooms;
+
   return (
     <div className='container'>
       <div className='top_page'>
@@ -30,7 +41,23 @@ export default function Rooms() {
           <h2>Znajdź coś dla siebie</h2>
         </div>
         <div className={styles.rooms}>
-          {rooms.map((room) => (
+          <RoomFilter onFilterChange={setFilteredPersons} />
+
+          {filteredRooms.length > 0 ? (
+            filteredRooms.map((room) => (
+              <RoomCard
+                key={room.id}
+                name={room.name}
+                image={room.image}
+                description={room.description}
+                details={room.details}
+              />
+            ))
+          ) : (
+            <p>Brak pokoi spełniających kryteria.</p>
+          )}
+
+          {/* {rooms.map((room) => (
             <RoomCard
               key={room.id}
               name={room.name}
@@ -38,7 +65,7 @@ export default function Rooms() {
               description={room.description}
               details={room.details}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
