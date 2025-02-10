@@ -7,7 +7,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -19,7 +19,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '2 - 3', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '1', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -31,7 +31,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -43,7 +43,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -55,7 +55,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -67,7 +67,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -79,7 +79,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
@@ -91,7 +91,7 @@ export const rooms = [
     details: [
       { icon: 'RoomPersonIcon', value: '3 - 4', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżko' },
-      { icon: 'RoomDoubleBedIcon', value: '1', label: 'piętrowe łóżko' },
+      { icon: 'RoomBunkBedIcon', value: '1', label: 'piętrowe łóżko' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
   },
