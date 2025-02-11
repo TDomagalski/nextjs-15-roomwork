@@ -45,10 +45,30 @@ export default function Rooms() {
         </div>
         <div className={styles.rooms}>
           <div className={styles.filter_buttons}>
-            <button onClick={() => setFilter('all')}>Wszystkie</button>
-            <button onClick={() => setFilter('2 - 3')}>2 - 3 osoby</button>
-            <button onClick={() => setFilter('3 - 4')}>3 - 4 osoby</button>
-            <button onClick={() => setFilter('6 - 8')}>6 - 8 osoby</button>
+            <button
+              className={filter === 'all' ? styles.active : ''}
+              onClick={() => setFilter('all')}
+            >
+              Wszystkie
+            </button>
+            <button
+              className={filter === '2 - 3' ? styles.active : ''}
+              onClick={() => setFilter('2 - 3')}
+            >
+              2 - 3 osoby
+            </button>
+            <button
+              className={filter === '3 - 4' ? styles.active : ''}
+              onClick={() => setFilter('3 - 4')}
+            >
+              3 - 4 osoby
+            </button>
+            <button
+              className={filter === '6 - 8' ? styles.active : ''}
+              onClick={() => setFilter('6 - 8')}
+            >
+              6 - 8 osoby
+            </button>
           </div>
 
           {/* Lista kwater */}

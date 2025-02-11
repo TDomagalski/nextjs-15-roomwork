@@ -24,6 +24,12 @@
         cursor: pointer;
         border-color: vars.$colorBorder;
         border-radius: 5px;
+        color: vars.$colorBlack;
+
+        &.active {
+          background-color: vars.$backgroundDark;
+          color: vars.$colorWhite;
+        }
       }
     }
   }
@@ -48,7 +54,7 @@
           transition: 0.3s;
 
           &:hover {
-            background-color: vars.$backgroundDark;
+            background-color: vars.$backgroundHoverDark;
             color: vars.$colorWhite;
           }
         }
