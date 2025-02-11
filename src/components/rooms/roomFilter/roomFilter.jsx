@@ -1,6 +1,8 @@
 // components/RoomFilter.jsx
 import { useState } from 'react';
 
+import styles from './roomFilter.module.scss';
+
 export default function RoomFilter({ onFilterChange }) {
   const [selectedPersons, setSelectedPersons] = useState('');
 
@@ -11,8 +13,8 @@ export default function RoomFilter({ onFilterChange }) {
   };
 
   return (
-    <div className='filter-container'>
-      <label htmlFor='person-filter'>Liczba osób:</label>
+    <div className={styles.filter_container}>
+      <label htmlFor='person-filter'>Liczba osób: </label>
       <select
         id='person-filter'
         value={selectedPersons}

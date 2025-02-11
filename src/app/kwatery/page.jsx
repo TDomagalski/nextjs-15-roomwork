@@ -38,7 +38,7 @@ export default function Rooms() {
 
       <div className={styles.container_flex}>
         <div className={styles.rooms_title}>
-          <h2>Znajdź coś dla siebie</h2>
+          <h2>Filtruj kwatery</h2>
         </div>
         <div className={styles.rooms}>
           <RoomFilter onFilterChange={setFilteredPersons} />
@@ -56,16 +56,6 @@ export default function Rooms() {
           ) : (
             <p>Brak pokoi spełniających kryteria.</p>
           )}
-
-          {/* {rooms.map((room) => (
-            <RoomCard
-              key={room.id}
-              name={room.name}
-              image={room.image}
-              description={room.description}
-              details={room.details}
-            />
-          ))} */}
         </div>
       </div>
     </div>

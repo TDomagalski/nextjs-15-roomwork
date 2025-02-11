@@ -1,0 +1,9 @@
+.filter_container {
+  grid-column: 1 / -1;
+
+  select {
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+}
