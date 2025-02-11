@@ -1,6 +1,7 @@
 // components/RoomCard.js
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 import styles from './roomCard.module.scss';
 
 // Import ikon
@@ -19,7 +20,13 @@ const iconMap = {
 
 export default function RoomCard({ name, image, description, details }) {
   return (
-    <div className={styles.room}>
+    <motion.div
+      className={styles.room}
+      initial={{ opacity: 0, scale: 0.9 }} // Początkowy stan
+      animate={{ opacity: 1, scale: 1 }} // Końcowy stan
+      exit={{ opacity: 0, scale: 0.9 }} // Animacja zanikania
+      transition={{ duration: 0.3 }} // Czas trwania animacji
+    >
       <div className={styles.room_img}>
         <Image src={image} alt={name} width={1072} height={712} />
       </div>
@@ -47,7 +54,7 @@ export default function RoomCard({ name, image, description, details }) {
           <button>Szczegóły</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

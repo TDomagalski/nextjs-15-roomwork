@@ -13,7 +13,20 @@
     // h2 {}
   }
 
-  // .rooms {}
+  .rooms {
+    .filter_buttons {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        padding: 0.2rem;
+        cursor: pointer;
+        border-color: vars.$colorBorder;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
 // ~~ MEDIA QUERIES
@@ -24,7 +37,23 @@
 
     // .rooms_title {}
 
-    // .rooms {}
+    .rooms {
+      .filter_buttons {
+        justify-content: center;
+
+        button {
+          padding: 0.25rem;
+          font-size: 1rem;
+          margin: 0 1rem;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: vars.$backgroundDark;
+            color: vars.$colorWhite;
+          }
+        }
+      }
+    }
   }
 }
 

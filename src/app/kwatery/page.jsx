@@ -1,20 +1,23 @@
 'use client';
-
 import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { rooms } from '../data/rooms';
 import RoomCard from '@components/rooms/roomCard/RoomCard';
-import RoomFilter from '@components/rooms/roomFilter/roomFilter';
 
 import styles from './rooms.module.scss';
 import Image from 'next/image';
 
 export default function Rooms() {
-  const [filteredPersons, setFilteredPersons] = useState(null);
+  const [filter, setFilter] = useState('all');
 
-  // Filtrowanie dokładnie według `personRange`
-  const filteredRooms = filteredPersons
-    ? rooms.filter((room) => room.personRange === filteredPersons) // Dokładne dopasowanie
-    : rooms;
+  // Dokładne filtrowanie po liczbie osób
+  const filteredRooms = rooms.filter((room) =>
+    filter === 'all'
+      ? true
+      : room.details.some(
+          (d) => d.icon === 'RoomPersonIcon' && d.value === filter,
+        ),
+  );
 
   return (
     <div className='container'>
@@ -41,10 +44,16 @@ export default function Rooms() {
           <h2>Filtruj kwatery</h2>
         </div>
         <div className={styles.rooms}>
-          <RoomFilter onFilterChange={setFilteredPersons} />
+          <div className={styles.filter_buttons}>
+            <button onClick={() => setFilter('all')}>Wszystkie</button>
+            <button onClick={() => setFilter('2 - 3')}>2 - 3 osoby</button>
+            <button onClick={() => setFilter('3 - 4')}>3 - 4 osoby</button>
+            <button onClick={() => setFilter('6 - 8')}>6 - 8 osoby</button>
+          </div>
 
-          {filteredRooms.length > 0 ? (
-            filteredRooms.map((room) => (
+          {/* Lista kwater */}
+          <AnimatePresence>
+            {filteredRooms.map((room) => (
               <RoomCard
                 key={room.id}
                 name={room.name}
@@ -52,10 +61,8 @@ export default function Rooms() {
                 description={room.description}
                 details={room.details}
               />
-            ))
-          ) : (
-            <p>Brak pokoi spełniających kryteria.</p>
-          )}
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </div>
