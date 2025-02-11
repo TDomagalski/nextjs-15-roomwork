@@ -49,25 +49,31 @@ export default function Rooms() {
               className={filter === 'all' ? styles.active : ''}
               onClick={() => setFilter('all')}
             >
-              Wszystkie
+              All
+            </button>
+            <button
+              className={filter === '2' ? styles.active : ''}
+              onClick={() => setFilter('2')}
+            >
+              2 osoby
             </button>
             <button
               className={filter === '2 - 3' ? styles.active : ''}
               onClick={() => setFilter('2 - 3')}
             >
-              2 - 3 osoby
+              2-3 osoby
             </button>
             <button
               className={filter === '3 - 4' ? styles.active : ''}
               onClick={() => setFilter('3 - 4')}
             >
-              3 - 4 osoby
+              3-4 osoby
             </button>
             <button
               className={filter === '6 - 8' ? styles.active : ''}
               onClick={() => setFilter('6 - 8')}
             >
-              6 - 8 osoby
+              6-8 osoby
             </button>
           </div>
 
