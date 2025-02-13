@@ -41,7 +41,7 @@ export default function Rooms() {
 
       <div className={styles.container_flex}>
         <div className={styles.rooms_title}>
-          <h2>Filtruj kwatery</h2>
+          <h2>Szukaj kwatery</h2>
         </div>
         <div className={styles.rooms}>
           <div className={styles.filter_buttons}>
@@ -58,22 +58,16 @@ export default function Rooms() {
               2 osoby
             </button>
             <button
-              className={filter === '2 - 3' ? styles.active : ''}
-              onClick={() => setFilter('2 - 3')}
+              className={filter === '3' ? styles.active : ''}
+              onClick={() => setFilter('3')}
             >
-              2-3 osoby
+              3 osoby
             </button>
             <button
-              className={filter === '3 - 4' ? styles.active : ''}
-              onClick={() => setFilter('3 - 4')}
+              className={filter === '6' ? styles.active : ''}
+              onClick={() => setFilter('6')}
             >
-              3-4 osoby
-            </button>
-            <button
-              className={filter === '6 - 8' ? styles.active : ''}
-              onClick={() => setFilter('6 - 8')}
-            >
-              6-8 osoby
+              6 osoby
             </button>
           </div>
 

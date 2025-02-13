@@ -7,14 +7,14 @@ import styles from './roomCard.module.scss';
 // Import ikon
 import RoomPersonIcon from '@public/kwatery/room_equipment/RoomPersonIcon';
 import RoomBedIcon from '@public/kwatery/room_equipment/RoomBedIcon';
-import RoomBunkBedIcon from '@public/kwatery/room_equipment/RoomBunkBedIcon';
+// import RoomBunkBedIcon from '@public/kwatery/room_equipment/RoomBunkBedIcon';
 import RoomBathroomIcon from '@public/kwatery/room_equipment/RoomBathroomIcon';
 
 // Mapa ikon (aby używać dynamicznie)
 const iconMap = {
   RoomPersonIcon: <RoomPersonIcon />,
   RoomBedIcon: <RoomBedIcon />,
-  RoomBunkBedIcon: <RoomBunkBedIcon />,
+  // RoomBunkBedIcon: <RoomBunkBedIcon />,
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 

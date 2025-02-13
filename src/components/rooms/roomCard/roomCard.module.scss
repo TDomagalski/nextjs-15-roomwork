@@ -34,7 +34,7 @@
     flex-direction: column;
 
     .info_title {
-      margin: 0.5rem 0;
+      margin: 1rem 0;
       letter-spacing: 2.5px;
     }
 
@@ -45,13 +45,16 @@
       flex-grow: 1;
 
       .info_icon_box {
-        flex-basis: 25%;
+        flex-basis: 20%;
 
         .info_icon {
+          display: flex;
+
           svg {
+            width: 16px;
+            height: 16px;
             fill: vars.$colorWhite;
-            margin-bottom: 0.2rem;
-            width: 1.5rem;
+            margin-right: 0.25rem;
           }
 
           .span_container {
@@ -60,7 +63,7 @@
             align-items: center;
 
             span {
-              font-size: 0.5rem;
+              font-size: 0.75rem;
 
               &:first-of-type {
                 margin-right: 0.2rem;
