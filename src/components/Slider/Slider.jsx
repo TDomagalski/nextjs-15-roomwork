@@ -1,7 +1,7 @@
-// components/Slider.js
-import { useState, useEffect } from 'react';
+// components/Slider.jsx
+import { useState } from 'react';
 import Image from 'next/image';
-import { useSwipeable } from 'react-swipeable';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slider.module.scss';
 
 export default function Slider({ images = [] }) {
@@ -23,15 +23,26 @@ export default function Slider({ images = [] }) {
         &#10095;
       </button>
 
-      {/* Obraz */}
+      {/* Animowane zdjęcie */}
       <div className={styles.imageContainer}>
-        <Image
-          src={images[currentIndex].url}
-          alt={`Slide ${currentIndex + 1}`}
-          layout='fill' /* Obraz wypełnia cały kontener */
-          objectFit='cover' /* Zajmuje cały kontener, zachowując proporcje */
-          objectPosition='center' /* Wyśrodkowanie */
-        />
+        <AnimatePresence mode='wait'>
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className={styles.motionImage}
+          >
+            <Image
+              src={images[currentIndex].url}
+              alt={images[currentIndex].alt}
+              layout='fill' /* Obraz wypełnia cały kontener */
+              objectFit='cover' /* Zajmuje cały kontener, zachowując proporcje */
+              objectPosition='center' /* Wyśrodkowanie */
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       {/* Kropki */}
