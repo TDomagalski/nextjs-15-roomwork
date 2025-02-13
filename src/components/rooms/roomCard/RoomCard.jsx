@@ -2,23 +2,23 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+import Slider from '@components/Slider/Slider';
 import styles from './roomCard.module.scss';
 
 // Import ikon
 import RoomPersonIcon from '@public/kwatery/room_equipment/RoomPersonIcon';
 import RoomBedIcon from '@public/kwatery/room_equipment/RoomBedIcon';
-// import RoomBunkBedIcon from '@public/kwatery/room_equipment/RoomBunkBedIcon';
+import RoomBunkBedIcon from '@public/kwatery/room_equipment/RoomBunkBedIcon';
 import RoomBathroomIcon from '@public/kwatery/room_equipment/RoomBathroomIcon';
 
 // Mapa ikon (aby używać dynamicznie)
 const iconMap = {
   RoomPersonIcon: <RoomPersonIcon />,
   RoomBedIcon: <RoomBedIcon />,
-  // RoomBunkBedIcon: <RoomBunkBedIcon />,
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 
-export default function RoomCard({ name, image, description, details }) {
+export default function RoomCard({ name, images, description, details }) {
   return (
     <motion.div
       className={styles.room}
@@ -27,9 +27,11 @@ export default function RoomCard({ name, image, description, details }) {
       exit={{ opacity: 0, scale: 0.9 }} // Animacja zanikania
       transition={{ duration: 0.3 }} // Czas trwania animacji
     >
+      {/* Slider zamiast Image */}
       <div className={styles.room_img}>
-        <Image src={image} alt={name} width={1072} height={712} />
+        <Slider images={images} />
       </div>
+
       <div className={styles.room_info}>
         <div className={styles.info_title}>
           <h3>{name}</h3>
@@ -61,8 +63,13 @@ export default function RoomCard({ name, image, description, details }) {
 // Walidacja propTypes
 RoomCard.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  personRange: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      url: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   description: PropTypes.string.isRequired,
   details: PropTypes.arrayOf(
     PropTypes.shape({

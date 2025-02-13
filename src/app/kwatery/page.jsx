@@ -77,7 +77,7 @@ export default function Rooms() {
               <RoomCard
                 key={room.id}
                 name={room.name}
-                image={room.image}
+                images={room.images}
                 description={room.description}
                 details={room.details}
               />
