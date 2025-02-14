@@ -22,20 +22,20 @@ export default function Kontakt() {
           </div>
         </div>
 
-        <div className={styles.container_flex}>
-          <div className={styles.infoSection}>
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>Family Party</h2>
-              <p className={styles.infoText}>Sp. z o.o.</p>
+        <div className='container_flex'>
+          <div className={styles.contactSection}>
+            <div className={styles.contactCard}>
+              <h2 className={styles.contactTitle}>Family Party</h2>
+              <p className={styles.contactText}>Sp. z o.o.</p>
             </div>
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>ul. Krakowska 62d</h2>
-              <p className={styles.infoText}>32-090 Słomniki</p>
+            <div className={styles.contactCard}>
+              <h2 className={styles.contactTitle}>ul. Krakowska 62d</h2>
+              <p className={styles.contactText}>32-090 Słomniki</p>
             </div>
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>NIP:</h2>
-              <div className={styles.infoTextBox}>
-                <p className={styles.infoText}>682-177-77-38</p>
+            <div className={styles.contactCard}>
+              <h2 className={styles.contactTitle}>NIP:</h2>
+              <div className={styles.contactTextBox}>
+                <p className={styles.contactText}>682-177-77-38</p>
                 <CopyToClipboard
                   className={styles.btnCopy}
                   value='6821777738'
@@ -58,10 +58,10 @@ export default function Kontakt() {
               </div>
             </div>
 
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>Regon:</h2>
-              <div className={styles.infoTextBox}>
-                <p className={styles.infoText}>381101585</p>
+            <div className={styles.contactCard}>
+              <h2 className={styles.contactTitle}>Regon:</h2>
+              <div className={styles.contactTextBox}>
+                <p className={styles.contactText}>381101585</p>
                 <CopyToClipboard
                   className={styles.btnCopy}
                   value='381101585'

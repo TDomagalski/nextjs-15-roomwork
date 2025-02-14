@@ -9,6 +9,11 @@
   }
 }
 
+html,
+body {
+  letter-spacing: 1.5;
+}
+
 body {
   color: $colorWhite;
   font-family: $fontFamilyDefault;
@@ -35,6 +40,13 @@ body {
     width: 100%;
     position: relative;
     margin: auto;
+
+    .container_flex {
+      margin: 2rem 0;
+      padding: 3rem 1rem;
+      background-color: #0c1222;
+      text-align: center;
+    }
 
     .top_page {
       position: relative;
@@ -87,6 +99,11 @@ body {
       max-width: 640px;
       padding-right: 1rem;
       padding-left: 1rem;
+
+      .container_flex {
+        padding: 2rem;
+        border-radius: 1.5rem;
+      }
     }
   }
 }

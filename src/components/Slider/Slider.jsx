@@ -37,9 +37,7 @@ export default function Slider({ images = [] }) {
             <Image
               src={images[currentIndex].url}
               alt={images[currentIndex].alt}
-              layout='fill' /* Obraz wypełnia cały kontener */
-              objectFit='cover' /* Zajmuje cały kontener, zachowując proporcje */
-              objectPosition='center' /* Wyśrodkowanie */
+              fill='responsive'
             />
           </motion.div>
         </AnimatePresence>
