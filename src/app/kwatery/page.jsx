@@ -39,7 +39,7 @@ export default function Rooms() {
         </div>
       </div>
 
-      <div className='container_flex'>
+      <div className='container_bg'>
         <div className={styles.rooms_title}>
           <h2>Szukaj kwatery</h2>
         </div>

@@ -22,7 +22,7 @@ export default function Kontakt() {
           </div>
         </div>
 
-        <div className='container_flex'>
+        <div className='container_bg'>
           <div className={styles.contactSection}>
             <div className={styles.contactCard}>
               <h2 className={styles.contactTitle}>Family Party</h2>
