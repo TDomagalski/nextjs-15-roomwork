@@ -1,29 +1,31 @@
 @use '../../styles/utilities/variables' as vars;
 @use '../../styles/components/buttons';
 
-.rooms_title {
-  margin-bottom: 1rem;
+.roomsContainer {
+  .rooms_title {
+    margin-bottom: 1rem;
 
-  // h2 {}
-}
+    // h2 {}
+  }
 
-.rooms {
-  .filter_buttons {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: space-between;
+  .rooms {
+    .filter_buttons {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: space-between;
 
-    button {
-      padding: 0.25rem;
-      font-size: 0.75rem;
-      cursor: pointer;
-      border-color: vars.$colorBorder;
-      border-radius: 5px;
-      color: vars.$colorBlack;
+      button {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+        cursor: pointer;
+        border-color: vars.$colorBorder;
+        border-radius: 5px;
+        color: vars.$colorBlack;
 
-      &.active {
-        background-color: vars.$backgroundDark;
-        color: vars.$colorWhite;
+        &.active {
+          background-color: vars.$backgroundDark;
+          color: vars.$colorWhite;
+        }
       }
     }
   }
@@ -31,21 +33,23 @@
 
 // ~~ MEDIA QUERIES
 @media (min-width: 640px) {
-  // .rooms_title {}
+  .roomsContainer {
+    // .rooms_title {}
 
-  .rooms {
-    .filter_buttons {
-      justify-content: center;
+    .rooms {
+      .filter_buttons {
+        justify-content: center;
 
-      button {
-        padding: 0.25rem;
-        font-size: 1rem;
-        margin: 0 1rem;
-        transition: 0.3s;
+        button {
+          padding: 0.25rem;
+          font-size: 1rem;
+          margin: 0 1rem;
+          transition: 0.3s;
 
-        &:hover {
-          background-color: vars.$backgroundHoverDark;
-          color: vars.$colorWhite;
+          &:hover {
+            background-color: vars.$backgroundHoverDark;
+            color: vars.$colorWhite;
+          }
         }
       }
     }

@@ -40,49 +40,51 @@ export default function Rooms() {
       </div>
 
       <div className='container_bg'>
-        <div className={styles.rooms_title}>
-          <h2>Szukaj kwatery</h2>
-        </div>
-        <div className={styles.rooms}>
-          <div className={styles.filter_buttons}>
-            <button
-              className={filter === 'all' ? styles.active : ''}
-              onClick={() => setFilter('all')}
-            >
-              All
-            </button>
-            <button
-              className={filter === '2' ? styles.active : ''}
-              onClick={() => setFilter('2')}
-            >
-              2 osoby
-            </button>
-            <button
-              className={filter === '3' ? styles.active : ''}
-              onClick={() => setFilter('3')}
-            >
-              3 osoby
-            </button>
-            <button
-              className={filter === '6' ? styles.active : ''}
-              onClick={() => setFilter('6')}
-            >
-              6 osoby
-            </button>
+        <div className={styles.roomsContainer}>
+          <div className={styles.rooms_title}>
+            <h2>Szukaj kwatery</h2>
           </div>
+          <div className={styles.rooms}>
+            <div className={styles.filter_buttons}>
+              <button
+                className={filter === 'all' ? styles.active : ''}
+                onClick={() => setFilter('all')}
+              >
+                All
+              </button>
+              <button
+                className={filter === '2' ? styles.active : ''}
+                onClick={() => setFilter('2')}
+              >
+                2 osoby
+              </button>
+              <button
+                className={filter === '3' ? styles.active : ''}
+                onClick={() => setFilter('3')}
+              >
+                3 osoby
+              </button>
+              <button
+                className={filter === '6' ? styles.active : ''}
+                onClick={() => setFilter('6')}
+              >
+                6 osoby
+              </button>
+            </div>
 
-          {/* Lista kwater */}
-          <AnimatePresence>
-            {filteredRooms.map((room) => (
-              <RoomCard
-                key={room.id}
-                name={room.name}
-                images={room.images}
-                description={room.description}
-                details={room.details}
-              />
-            ))}
-          </AnimatePresence>
+            {/* Lista kwater */}
+            <AnimatePresence>
+              {filteredRooms.map((room) => (
+                <RoomCard
+                  key={room.id}
+                  name={room.name}
+                  images={room.images}
+                  description={room.description}
+                  details={room.details}
+                />
+              ))}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     </div>

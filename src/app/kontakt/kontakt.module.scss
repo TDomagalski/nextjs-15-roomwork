@@ -1,22 +1,62 @@
+@use '../../styles/utilities/variables' as vars;
 @use '../../styles/components/buttons';
 
-.contactSection {
-  .contactCard {
+.contactContainer {
+  .contactSection {
     margin: 2rem 0;
-    .contactTitle {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
+
+    &:last-of-type {
+      margin: 4rem 0 2rem 0;
     }
-    // .contactText {}
 
-    .contactTextBox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
+    .contactCard {
+      margin: 2rem 0;
 
+      .contactTitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+      }
       // .contactText {}
+
+      .contactTextBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        // .contactText {}
+      }
+    }
+
+    .contactBtns {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .contactBtn {
+        background-color: vars.$backgroundDark;
+        padding: 0.2rem;
+        flex-basis: 40%;
+        border: 1px solid vars.$colorBorder;
+        border-radius: 1rem;
+        text-align: center;
+
+        a {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          svg {
+            width: 2rem;
+            padding: 0.2rem;
+          }
+
+          p {
+            flex-grow: 1;
+          }
+        }
+      }
     }
   }
 }
@@ -34,19 +74,6 @@
 
 // ~~ MEDIA QUERIES
 @media (min-width: 640px) {
-  .contactSection {
-    text-align: left;
-    .contactCard {
-      // .contactTitle {}
-      // .contactText {}
-
-      .contactTextBox {
-        justify-content: flex-start;
-
-        // .contactText {}
-      }
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -56,7 +83,44 @@
     }
   }
 }
-// @media (min-width: 1024px) {}
+
+@media (min-width: 1024px) {
+  .contactContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contactSection {
+      text-align: center;
+
+      .contactCard {
+        // .contactTitle {}
+        // .contactText {}
+
+        .contactTextBox {
+          justify-content: center;
+          // .contactText {}
+        }
+      }
+
+      .contactBtns {
+        flex-direction: column;
+        gap: 4rem;
+        font-size: 1.5rem;
+        .contactBtn {
+          padding: 2rem 1rem;
+          flex-basis: 50%;
+
+          a {
+            svg {
+              width: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // @media (min-width: 1280px) {}
 
