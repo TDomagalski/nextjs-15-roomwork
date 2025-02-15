@@ -1,4 +1,3 @@
-// 'use client';
 import styles from './kontakt.module.scss';
 import Image from 'next/image';
 
