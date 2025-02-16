@@ -106,44 +106,51 @@ export default function Footer() {
           </div>
           <div className={styles.footer_right}>
             <div className={styles.rooms}>
-              <div className={styles.rooms_side}>
-                <h4>Parter</h4>
-                <div className={styles.rooms_box}>
-                  <Link href='#' className={styles.room}>
-                    Pokój 1
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 2
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 3
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 4
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 5
-                  </Link>
-                </div>
+              <div className={styles.rooms_title}>
+                <h3>Kwatery pracownicze</h3>
               </div>
-              <div className={styles.rooms_side}>
-                <h4>Piętro</h4>
-                <div className={styles.rooms_box}>
-                  <Link href='#' className={styles.room}>
-                    Pokój 1
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 2
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 3
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 4
-                  </Link>
-                  <Link href='#' className={styles.room}>
-                    Pokój 5
-                  </Link>
+              <div className={styles.rooms_sides}>
+                <div className={styles.rooms_side}>
+                  <h3>Parter</h3>
+                  <ul className={styles.rooms_box}>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 1</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 2</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 3</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 4</Link>
+                    </li>
+
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 5</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className={styles.rooms_side}>
+                  <h3>Piętro</h3>
+                  <ul className={styles.rooms_box}>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 1</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 2</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 3</Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 4</Link>
+                    </li>
+
+                    <li className={styles.room}>
+                      <Link href='#'>Pokój 5</Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
