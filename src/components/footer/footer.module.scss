@@ -1,17 +1,28 @@
 @use '../../styles/utilities/variables' as vars;
 @use '../../styles/components/buttons';
 
+// SVG Icons
+.c {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .footer_grid {
   .footer_left {
     // background-color: lightblue;
     padding: 1rem;
     text-align: left;
-    border-right: 1px solid white;
 
     // .left_company {}
 
     .left_socials {
-      margin: 1rem 0;
+      margin: 2rem 0;
+
+      svg {
+        width: 2rem;
+      }
     }
 
     .left_btns {
@@ -22,16 +33,17 @@
 
       .btn {
         background-color: vars.$backgroundDark;
-        padding: 0.2rem;
         flex-basis: 40%;
         border: 1px solid vars.$colorBorder;
         border-radius: 1rem;
-        text-align: center;
 
         a {
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          padding: 0.25rem 0.5rem;
+          font-size: 0.75rem;
+          text-align: center;
 
           svg {
             width: 2rem;
@@ -49,17 +61,24 @@
       // background-color: lightcoral;
       padding: 1rem;
       display: flex;
-      gap: 1rem;
 
       .rooms_side {
-        // h5 {}
+        &:last-of-type {
+          border-left: 1px solid rgba(255, 255, 255, 0.226);
+        }
+
+        h4 {
+          margin-bottom: 0.25rem;
+        }
+
         .rooms_box {
           display: flex;
           flex-wrap: wrap;
+          gap: 1rem;
 
           a.room {
             flex-basis: 100%;
-            color: blue;
+            font-style: italic;
           }
         }
       }
@@ -83,16 +102,20 @@
     gap: 2rem;
 
     .footer_left {
+      border-right: 1px solid white;
+
       // .left_company {}
       // .left_socials {}
 
-      // .left_btns {
-      //   .btn {
-      //     a {
-      //       svg {}
-      //     }
-      //   }
-      // }
+      .left_btns {
+        font-size: 1rem;
+        // .btn {
+        //   a {
+        //     svg {
+        //     }
+        //   }
+        // }
+      }
     }
 
     .footer_right {
@@ -100,16 +123,16 @@
       grid-template-rows: 3fr 1fr; // Stosunek wierszy 1:3 w prawej kolumnie
       gap: 0.5rem;
 
-      .rooms {
-        //   .rooms_side {
-        //     h5 {}
-        //     .rooms_box {
-        //       a.room {
-        //       }
-        //     }
-        //   }
-        // }
-      }
+      // .rooms {
+      //     .rooms_side {
+      //       h5 {}
+      //       .rooms_box {
+      //         a.room {
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
 
       // .right_website {}
     }
