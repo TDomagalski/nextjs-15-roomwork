@@ -1,7 +1,9 @@
-export const rooms = [
+const rooms = [
   {
     id: 1,
     name: 'Kwatera 1 na piętrze',
+    url: '/kwatery/kwatera-1-pietro',
+    slug: 'kwatera-1-pietro',
     images: [
       {
         id: 1,
@@ -36,6 +38,8 @@ export const rooms = [
   {
     id: 2,
     name: 'Kwatera 2 na piętrze',
+    url: '/kwatery/kwatera-2-pietro',
+    slug: 'kwatera-2-pietro',
     images: [
       {
         id: 1,
@@ -65,6 +69,9 @@ export const rooms = [
   {
     id: 3,
     name: 'Kwatera 3 na piętrze',
+    url: '/kwatery/kwatera-3-pietro',
+    slug: 'kwatera-3-pietro',
+
     images: [
       {
         id: 1,
@@ -99,6 +106,9 @@ export const rooms = [
   {
     id: 4,
     name: 'Kwatera 4 na piętrze',
+    url: '/kwatery/kwatera-4-pietro',
+    slug: 'kwatera-4-pietro',
+
     images: [
       {
         id: 1,
@@ -133,6 +143,9 @@ export const rooms = [
   {
     id: 5,
     name: 'Kwatera 5 na piętrze',
+    url: '/kwatery/kwatera-5-pietro',
+    slug: 'kwatera-5-pietro',
+
     images: [
       {
         id: 1,
@@ -151,6 +164,8 @@ export const rooms = [
   {
     id: 6,
     name: 'Kwatera 1 na parterze',
+    url: '/kwatery/kwatera-1-parter',
+    slug: 'kwatera-1-parter',
     images: [
       {
         id: 1,
@@ -180,6 +195,8 @@ export const rooms = [
   {
     id: 7,
     name: 'Kwatera 2 na parterze',
+    url: '/kwatery/kwatera-2-parter',
+    slug: 'kwatera-2-parter',
     images: [
       {
         id: 1,
@@ -209,6 +226,8 @@ export const rooms = [
   {
     id: 8,
     name: 'Kwatera 3 na parterze',
+    url: '/kwatery/kwatera-3-parter',
+    slug: 'kwatera-3-parter',
     images: [
       {
         id: 1,
@@ -238,6 +257,8 @@ export const rooms = [
   {
     id: 9,
     name: 'Kwatera 4 na parterze',
+    url: '/kwatery/kwatera-4-parter',
+    slug: 'kwatera-4-parter',
     images: [
       {
         id: 1,
@@ -267,6 +288,8 @@ export const rooms = [
   {
     id: 10,
     name: 'Kwatera 5 na parterze',
+    url: '/kwatery/kwatera-5-parter',
+    slug: 'kwatera-5-parter',
     images: [
       {
         id: 1,
@@ -296,6 +319,8 @@ export const rooms = [
   {
     id: 11,
     name: 'Kwatera 6 na parterze',
+    url: '/kwatery/kwatera-6-parter',
+    slug: 'kwatera-6-parter',
     images: [
       {
         id: 1,
@@ -318,3 +343,5 @@ export const rooms = [
     ],
   },
 ];
+
+export default rooms;

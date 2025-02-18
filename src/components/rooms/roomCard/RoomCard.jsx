@@ -1,7 +1,10 @@
+'use client';
 // components/RoomCard.js
-import Image from 'next/image';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+
+// import rooms from '../../../app/data/rooms';
 import Slider from '@components/Slider/Slider';
 import styles from './roomCard.module.scss';
 
@@ -18,7 +21,14 @@ const iconMap = {
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 
-export default function RoomCard({ name, images, description, details }) {
+export default function RoomCard({
+  name,
+  url,
+  slug,
+  images,
+  description,
+  details,
+}) {
   return (
     <motion.div
       className={styles.room}
@@ -52,9 +62,9 @@ export default function RoomCard({ name, images, description, details }) {
         <div className={styles.info_description}>
           <p>{description}</p>
         </div>
-        <div className={styles.room_button}>
-          <button>Szczegóły</button>
-        </div>
+        <Link href={url}>
+          <button className='btn'>Zobacz szczegóły</button>
+        </Link>
       </div>
     </motion.div>
   );
@@ -63,6 +73,8 @@ export default function RoomCard({ name, images, description, details }) {
 // Walidacja propTypes
 RoomCard.propTypes = {
   name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

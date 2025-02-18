@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { rooms } from '../data/rooms';
+import rooms from '../data/rooms';
 import RoomCard from '@components/rooms/roomCard/RoomCard';
 
 import styles from './rooms.module.scss';
@@ -78,6 +78,8 @@ export default function Rooms() {
                 <RoomCard
                   key={room.id}
                   name={room.name}
+                  url={room.url}
+                  slug={room.slug}
                   images={room.images}
                   description={room.description}
                   details={room.details}
