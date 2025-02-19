@@ -1,3 +1,5 @@
+@use '../../../styles/utilities/variables' as vars;
+
 .room_detail {
   .room_details {
     display: flex;
@@ -25,8 +27,7 @@
 
     .room_img {
       position: relative;
-      // width: 20%;
-      // height: 50vh;
+      border: 1px solid vars.$colorBorder;
 
       img {
         object-fit: cover;
@@ -34,3 +35,30 @@
     }
   }
 }
+
+// ~~ MEDIA QUERIES
+// @media (min-width: 640px) {}
+@media (min-width: 768px) {
+  .room_detail {
+    .room_details {
+      .detail {
+        font-size: 1rem;
+        div {
+          svg {
+            width: 1rem;
+          }
+        }
+      }
+    }
+
+    // .room_imgs {
+    //   .room_img {
+    //     img {
+    //     }
+    //   }
+    // }
+  }
+}
+// @media (min-width: 1024px) {}
+// @media (min-width: 1280px) {}
+// @media (min-width: 1536px) {}

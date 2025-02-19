@@ -114,20 +114,34 @@ export default function Footer() {
                   <h3>Parter</h3>
                   <ul className={styles.rooms_box}>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 1</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-1-parter'>
+                        Pokój 1
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 2</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-2-parter'>
+                        Pokój 2
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 3</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-3-parter'>
+                        Pokój 3
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 4</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-4-parter'>
+                        Pokój 4
+                      </Link>
                     </li>
-
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 5</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-5-parter'>
+                        Pokój 5
+                      </Link>
+                    </li>
+                    <li className={styles.room}>
+                      <Link href='http://localhost:3000/kwatery/kwatera-6-parter'>
+                        Pokój 6
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -135,20 +149,29 @@ export default function Footer() {
                   <h3>Piętro</h3>
                   <ul className={styles.rooms_box}>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 1</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-1-pietro'>
+                        Pokój 1
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 2</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-2-pietro'>
+                        Pokój 2
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 3</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-3-pietro'>
+                        Pokój 3
+                      </Link>
                     </li>
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 4</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-4-pietro'>
+                        Pokój 4
+                      </Link>
                     </li>
-
                     <li className={styles.room}>
-                      <Link href='#'>Pokój 5</Link>
+                      <Link href='http://localhost:3000/kwatery/kwatera-5-pietro'>
+                        Pokój 5
+                      </Link>
                     </li>
                   </ul>
                 </div>
