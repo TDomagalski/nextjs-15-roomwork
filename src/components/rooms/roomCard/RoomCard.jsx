@@ -21,14 +21,7 @@ const iconMap = {
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 
-export default function RoomCard({
-  name,
-  url,
-  slug,
-  images,
-  description,
-  details,
-}) {
+export default function RoomCard({ name, url, images, description, details }) {
   return (
     <motion.div
       className={styles.room}
@@ -62,7 +55,7 @@ export default function RoomCard({
         <div className={styles.info_description}>
           <p>{description}</p>
         </div>
-        <Link href={url}>
+        <Link className='room_button' href={url}>
           <button className='btn'>Zobacz szczegóły</button>
         </Link>
       </div>
@@ -74,7 +67,6 @@ export default function RoomCard({
 RoomCard.propTypes = {
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

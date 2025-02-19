@@ -1,0 +1,36 @@
+.room_detail {
+  .room_details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+    .detail {
+      font-size: 0.75rem;
+      div {
+        svg {
+          fill: white;
+          width: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .room_imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    .room_img {
+      position: relative;
+      // width: 20%;
+      // height: 50vh;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
