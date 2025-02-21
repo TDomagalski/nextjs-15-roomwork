@@ -85,8 +85,8 @@ export default function RoomDetail() {
         </div>
 
         <div className='container_bg'>
-          <div className={styles.room_detail}>
-            <h2>{room.name}</h2>
+          <div className={styles.room}>
+            <h3 className={styles.room_name}>{room.name}</h3>
             <p>{room.description}</p>
 
             <div className={styles.room_details}>

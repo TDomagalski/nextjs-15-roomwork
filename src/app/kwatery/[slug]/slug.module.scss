@@ -1,6 +1,9 @@
 @use '../../../styles/utilities/variables' as vars;
 
-.room_detail {
+.room {
+  .room_name {
+    margin-bottom: 0.5rem;
+  }
   .room_details {
     display: flex;
     justify-content: center;

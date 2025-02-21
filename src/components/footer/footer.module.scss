@@ -2,6 +2,13 @@
 @use '../../styles/components/buttons';
 
 // SVG Icons
+.a {
+  fill: none;
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .c {
   fill: none;
   stroke: #ffffff;
@@ -15,13 +22,25 @@
     padding: 1rem;
     text-align: left;
 
-    // .left_company {}
+    .left_company {
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
 
     .left_socials {
+      display: flex;
+      align-items: center;
       margin: 2rem 0;
 
-      svg {
-        width: 2rem;
+      a {
+        margin-right: 1rem;
+        svg {
+          width: 2rem;
+        }
       }
     }
 
