@@ -56,7 +56,7 @@ export default function RoomCard({ name, url, images, description, details }) {
           <p>{description}</p>
         </div>
         <Link className='room_button' href={url}>
-          <button className='btn'>Zobacz szczegóły</button>
+          <button className='btn'>Szczegóły</button>
         </Link>
       </div>
     </motion.div>

@@ -101,6 +101,12 @@
             .room {
               flex-basis: 100%;
               font-style: italic;
+
+              a {
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
             }
           }
         }

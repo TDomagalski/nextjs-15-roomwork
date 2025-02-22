@@ -33,8 +33,10 @@ export default function Rooms() {
           <Image
             src='/global/korytarz-parter_img1.webp'
             alt='img'
-            width={4032}
-            height={2268}
+            width={2016}
+            height={1134}
+            loading='lazy' // Można jawnie ustawić
+            priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
           />
         </div>
       </div>

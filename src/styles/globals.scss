@@ -75,7 +75,6 @@ body {
 
         .text {
           position: absolute;
-          display: inline-flex;
           width: 300px;
           padding: 1rem;
           z-index: 999;
@@ -83,7 +82,11 @@ body {
           h1 {
             font-size: 1.2rem;
           }
-          // p {}
+
+          p {
+            font-size: 0.8rem;
+            letter-spacing: normal;
+          }
         }
 
         .box {
@@ -137,7 +140,11 @@ body {
             h1 {
               font-size: 1.5rem;
             }
-            // p {}
+
+            p {
+              font-size: 1.25rem;
+              letter-spacing: 1.5px;
+            }
           }
 
           .box {

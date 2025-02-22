@@ -90,9 +90,11 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
+
             <div className={styles.left_btns}>
+              <span>Zarezerwój pokój</span>
               <div className={styles.btn}>
-                <Link href='tel:+48123456789'>
+                <Link href='tel:+48690328659'>
                   <svg
                     viewBox='0 0 24 24'
                     fill='none'
@@ -114,12 +116,12 @@ export default function Footer() {
                       ></path>
                     </g>
                   </svg>
-                  <p>444-444-444</p>
+                  <p>690-328-659</p>
                 </Link>
               </div>
 
               <div className={styles.btn}>
-                <Link href='mailto:tomektd6@gmail.com'>
+                <Link href='mailto:kwatery@roomwork.pl'>
                   <svg
                     viewBox='0 0 24 24'
                     fill='none'
@@ -140,7 +142,7 @@ export default function Footer() {
                       ></path>
                     </g>
                   </svg>
-                  <p>tomektd6@gmail.com</p>
+                  <p>kwatery@roomwork.pl</p>
                 </Link>
               </div>
             </div>

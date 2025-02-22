@@ -12,12 +12,19 @@ export default function Kontakt() {
           <div className='page_title'>
             <div className='text'>
               <h1>Kontakt</h1>
-              {/* <p>krótki opis działalności</p> */}
+              <p>Zarezerwój swój pobyt</p>
             </div>
             <div className='box'></div>
           </div>
           <div className='page_img'>
-            <Image src='/global/img.webp' alt='img' width={1072} height={712} />
+            <Image
+              src='/global/patio.webp'
+              alt='img'
+              width={1072}
+              height={712}
+              loading='lazy' // Można jawnie ustawić
+              priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
+            />
           </div>
         </div>
 
@@ -101,7 +108,7 @@ export default function Kontakt() {
             <div className={styles.contactSection}>
               <div className={styles.contactBtns}>
                 <div className={styles.contactBtn}>
-                  <a href='tel:+48123456789'>
+                  <a href='tel:+48690328659'>
                     <svg
                       viewBox='0 0 24 24'
                       fill='none'
@@ -123,11 +130,11 @@ export default function Kontakt() {
                         ></path>
                       </g>
                     </svg>
-                    <p>444-444-444</p>
+                    <p>690-328-659</p>
                   </a>
                 </div>
                 <div className={styles.contactBtn}>
-                  <a href='mailto:tomektd6@gmail.com'>
+                  <a href='mailto:kwatery@roomwork.pl'>
                     <svg
                       viewBox='0 0 24 24'
                       fill='none'

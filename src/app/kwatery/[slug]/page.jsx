@@ -78,8 +78,10 @@ export default function RoomDetail() {
             <Image
               src={room.roomImg}
               alt={room.name}
-              width={1848}
-              height={1232}
+              width={2016}
+              height={1134}
+              loading='lazy' // Można jawnie ustawić
+              priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
             />
           </div>
         </div>
