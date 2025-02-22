@@ -31,10 +31,10 @@ export default function Rooms() {
         </div>
         <div className='page_img'>
           <Image
-            src='/global/top_page.webp'
+            src='/global/korytarz-parter_img1.webp'
             alt='img'
-            width={1848}
-            height={1232}
+            width={4032}
+            height={2268}
           />
         </div>
       </div>

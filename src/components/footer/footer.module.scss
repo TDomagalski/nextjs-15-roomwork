@@ -22,14 +22,7 @@
     padding: 1rem;
     text-align: left;
 
-    .left_company {
-      h3 {
-        margin-bottom: 0.5rem;
-      }
-      p {
-        margin-bottom: 0.25rem;
-      }
-    }
+    // .left_company {}
 
     .left_socials {
       display: flex;
@@ -69,7 +62,9 @@
             padding: 0.2rem;
           }
 
-          // p {}
+          p {
+            margin: 0;
+          }
         }
       }
     }
@@ -100,7 +95,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.5rem;
             list-style-type: none;
 
             .room {

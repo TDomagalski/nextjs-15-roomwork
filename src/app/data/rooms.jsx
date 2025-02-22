@@ -34,6 +34,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-pietro_img1.webp',
   },
 
   {
@@ -66,6 +67,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-pietro_img1.webp',
   },
 
   {
@@ -103,6 +105,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-pietro_img1.webp',
   },
 
   {
@@ -140,6 +143,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-pietro_img1.webp',
   },
 
   {
@@ -160,6 +164,7 @@ const rooms = [
       { icon: 'RoomPersonIcon', value: '2', label: 'osoby' },
       { icon: 'RoomBedIcon', value: '2', label: 'łóżka' },
     ],
+    roomImg: '/global/korytarz-pietro_img1.webp',
   },
 
   {
@@ -192,6 +197,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 
   {
@@ -224,6 +230,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 
   {
@@ -256,6 +263,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 
   {
@@ -288,6 +296,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 
   {
@@ -320,6 +329,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '3', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 
   {
@@ -347,6 +357,7 @@ const rooms = [
       { icon: 'RoomBedIcon', value: '8', label: 'łóżka' },
       { icon: 'RoomBathroomIcon', value: '1', label: 'łazienka' },
     ],
+    roomImg: '/global/korytarz-parter_img2.webp',
   },
 ];
 

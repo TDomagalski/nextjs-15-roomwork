@@ -76,8 +76,8 @@ export default function RoomDetail() {
           </div>
           <div className='page_img'>
             <Image
-              src='/global/top_page.webp'
-              alt='img'
+              src={room.roomImg}
+              alt={room.name}
               width={1848}
               height={1232}
             />
