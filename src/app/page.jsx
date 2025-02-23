@@ -7,7 +7,9 @@ export default function Home() {
       <div className='top_page'>
         <div className='page_title'>
           <div className='text'>
-            <h1>RoomWork - Kwatery pracownicze</h1>
+            <h1>
+              RoomWork <br /> Kwatery pracownicze
+            </h1>
             {/* <p>krótki opis działalności</p> */}
           </div>
           <div className='box'></div>
@@ -23,39 +25,32 @@ export default function Home() {
       </div>
 
       <div className='container_bg'>
-        <div className={styles.frontpageContainer}>
+        <div className='container_page'>
           <div className={styles.frontpage_info}>
-            <div className={styles.frontpage_title}>
-              <h2>RoomWork</h2>
-            </div>
-            <div className={styles.frontpage_subtitle}>
-              <h3>Go work and relax in RoomWork</h3>
+            <div className={styles.info_container}>
+              <div className={styles.info_title}>
+                <h2>RoomWork</h2>
+              </div>
+              <div className={styles.info_slogan}>
+                <h3>Go work and relax in RoomWork</h3>
+              </div>
             </div>
             <div className={styles.frontpage_text}>
               <h4>
-                Komfortowe kwatery pracownicze w Słomnikach – idealne miejsce
-                dla firm i ekip pracowniczych
+                Komfortowe kwatery pracownicze w Słomnikach - idealne miejsce
+                dla Firm, Ekip pracowniczych jak również Osób prywatnych.
               </h4>
               <p>
                 Szukasz wygodnego i dobrze wyposażonego miejsca noclegowego dla
-                swoich pracowników w Słomnikach? Oferujemy nowoczesne kwatery
-                pracownicze, które spełnią wszystkie oczekiwania. Dysponujemy 11
-                pokojami, mogącymi łącznie pomieścić do 40 osób. Każdy pokój
-                wyposażony jest w prywatną łazienkę, co zapewnia komfort i
-                prywatność.
-              </p>
-              <p>
-                Nasze kwatery znajdują się zarówno na parterze, jak i na
-                piętrze. Na każdym poziomie dostępna jest w pełni wyposażona
-                kuchnia, gdzie Goście mogą samodzielnie przygotować posiłki.
-                Oferujemy również duży parking na terenie obiektu, a dla
-                mieszkańców zapewniamy szybkie i darmowe WiFi.
-              </p>
-              <p>
-                Nasza lokalizacja w Słomnikach to doskonała opcja dla firm
-                prowadzących projekty w okolicy Krakowa, Proszowic, Miechowa,
-                Brończyc, Czech, Prandocina, Januszowic i pobliskich
-                miejscowości. Zapewniamy komfortowy nocleg w atrakcyjnej cenie.
+                swoich pracowników w Słomnikach? Oferujemy&nbsp;elastyczne opcje
+                wynajmu kwater pracowniczych dla firm oraz klientów
+                indywidualnych.
+                <br />
+                Dysponujemy 11 pokojami, mogącymi łącznie pomieścić do 40 Osób.
+                Nasze obiekty są w pełni wyposażone i dostosowane do
+                długoterminowego i krótkoterminowego pobytu. Sprawdź naszą
+                ofertę i wybierz najlepsze rozwiązanie dla siebie lub swojego
+                zespołu!
               </p>
             </div>
           </div>
@@ -63,7 +58,7 @@ export default function Home() {
       </div>
 
       <div className='container_bg'>
-        <div className={styles.frontpageContainer}>
+        <div className='container_page'>
           <div className={styles.frontpage_info}>
             <div className={styles.frontpage_text}>
               <h4>Rezerwacje i więcej informacji</h4>

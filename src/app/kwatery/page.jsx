@@ -25,7 +25,7 @@ export default function Rooms() {
         <div className='page_title'>
           <div className='text'>
             <h1>Kwatery pracownicze</h1>
-            {/* <p>krótki opis działalności</p> */}
+            <p>do wynajęcia w Słomnikach</p>
           </div>
           <div className='box'></div>
         </div>
@@ -42,7 +42,20 @@ export default function Rooms() {
       </div>
 
       <div className='container_bg'>
-        <div className={styles.roomsContainer}>
+        <div className='container_page'>
+          <h4>Znajdz coś dla siebie</h4>
+          <p>
+            Nasze kwatery znajdują się zarówno na parterze, jak i na piętrze. Na
+            każdym poziomie dostępna jest w pełni wyposażona kuchnia, gdzie
+            Goście mogą samodzielnie przygotować posiłki. Oferujemy również duży
+            parking na terenie obiektu, a dla mieszkańców zapewniamy szybkie i
+            darmowe WiFi.
+          </p>
+        </div>
+      </div>
+
+      <div className='container_bg'>
+        <div className='container_page'>
           <div className={styles.rooms_title}>
             <h2>Szukaj kwatery</h2>
           </div>

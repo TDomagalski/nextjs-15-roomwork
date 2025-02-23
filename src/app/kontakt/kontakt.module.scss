@@ -3,15 +3,15 @@
 
 .contactContainer {
   .contactSection {
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     &:last-of-type {
-      margin: 4rem 0 2rem 0;
+      margin: 4rem 0 0 0;
     }
 
     .contactCard {
-      margin: 2rem 0;
-
       .contactTitle {
         font-size: 1.5rem;
         font-weight: 700;
@@ -93,6 +93,10 @@
 
     .contactSection {
       text-align: center;
+
+      &:last-of-type {
+        margin: 0;
+      }
 
       .contactCard {
         // .contactTitle {}

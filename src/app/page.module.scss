@@ -1,14 +1,12 @@
-.frontpageContainer {
-  .frontpage_info {
-    // .frontpage_title {}
+.frontpage_info {
+  .info_container {
+    margin-bottom: 2rem;
 
-    .frontpage_subtitle {
-      margin-bottom: 2rem;
+    .info_title {
     }
-
-    .frontpage_text {
-      font-size: 1.25rem;
-      letter-spacing: 2px;
+    .info_slogan {
+    }
+    .info_text {
     }
   }
 }

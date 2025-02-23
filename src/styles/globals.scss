@@ -60,6 +60,10 @@ body {
       padding: 3rem 1rem;
       background-color: $backgroundDarkDefault;
       text-align: center;
+
+      .container_page {
+        text-align: left;
+      }
     }
 
     .top_page {

@@ -87,31 +87,38 @@ export default function RoomDetail() {
         </div>
 
         <div className='container_bg'>
-          <div className={styles.room}>
-            <h3 className={styles.room_name}>{room.name}</h3>
-            <p>{room.description}</p>
+          <div className='container_page'>
+            <div className={styles.room}>
+              <h3 className={styles.room_name}>{room.name}</h3>
+              <p>{room.description}</p>
 
-            <div className={styles.room_details}>
-              {room.details.map((detail, index) => (
-                <div key={index} className={styles.detail}>
-                  <div>{iconMap[detail.icon]}</div>
-                  <div>
-                    {detail.value} {detail.label}
+              <div className={styles.room_details}>
+                {room.details.map((detail, index) => (
+                  <div key={index} className={styles.detail}>
+                    <div>{iconMap[detail.icon]}</div>
+                    <div>
+                      {detail.value} {detail.label}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
 
-            <div className={styles.room_imgs}>
-              {room.images.map((img, index) => (
-                <div
-                  key={img.id}
-                  className={styles.room_img}
-                  onClick={() => openFullScreen(index)}
-                >
-                  <Image src={img.url} alt={img.alt} width={400} height={300} />
-                </div>
-              ))}
+              <div className={styles.room_imgs}>
+                {room.images.map((img, index) => (
+                  <div
+                    key={img.id}
+                    className={styles.room_img}
+                    onClick={() => openFullScreen(index)}
+                  >
+                    <Image
+                      src={img.url}
+                      alt={img.alt}
+                      width={400}
+                      height={300}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

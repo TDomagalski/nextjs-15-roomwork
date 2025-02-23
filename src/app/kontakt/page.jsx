@@ -29,6 +29,18 @@ export default function Kontakt() {
         </div>
 
         <div className='container_bg'>
+          <div className='container_page'>
+            <h4>Jesteśmy tutaj</h4>
+            <p>
+              Nasza lokalizacja w Słomnikach to doskonała opcja dla firm
+              prowadzących projekty w okolicy Krakowa, Proszowic, Miechowa,
+              Brończyc, Czech, Prandocina, Januszowic i pobliskich miejscowości.
+              Zapewniamy komfortowy nocleg w atrakcyjnej cenie.
+            </p>
+          </div>
+        </div>
+
+        <div className='container_bg'>
           <div className={styles.contactContainer}>
             <div className={styles.contactSection}>
               <div className={styles.contactCard}>
