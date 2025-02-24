@@ -1,12 +1,24 @@
-.frontpage_info {
-  .info_container {
-    margin-bottom: 2rem;
+// .frontpage_info {
+//   .info_container {
+//     .info_title {}
+//     .info_slogan {}
+//   }
+// }
 
-    .info_title {
-    }
-    .info_slogan {
-    }
-    .info_text {
+.frontpage_contact {
+  .contact_text {
+    margin-bottom: 2rem;
+  }
+
+  .contact_btns {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      // svg {}
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -14,6 +26,42 @@
 // ~~ MEDIA QUERIES
 // @media (min-width: 640px) {}
 // @media (min-width: 768px) {}
-// @media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  // .frontpage_info {
+  //   .info_container {
+  //     .info_title {}
+  //     .info_slogan {}
+  //   }
+  // }
+
+  .frontpage_contact {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    .contact_text {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact_btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        svg {
+          margin-right: 0.5rem;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
 // @media (min-width: 1280px) {}
 // @media (min-width: 1536px) {}

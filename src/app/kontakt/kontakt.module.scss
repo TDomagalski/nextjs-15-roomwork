@@ -25,7 +25,9 @@
         align-items: center;
         gap: 1rem;
 
-        // .contactText {}
+        p {
+          margin: 0;
+        }
       }
     }
 
@@ -36,16 +38,17 @@
 
       .contactBtn {
         background-color: vars.$backgroundDark;
-        padding: 0.2rem;
         flex-basis: 40%;
         border: 1px solid vars.$colorBorder;
         border-radius: 1rem;
         text-align: center;
 
         a {
+          padding: 0.2rem;
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          letter-spacing: 3px;
 
           svg {
             width: 2rem;
@@ -113,10 +116,10 @@
         gap: 4rem;
         font-size: 1.5rem;
         .contactBtn {
-          padding: 2rem 1rem;
           flex-basis: 50%;
 
           a {
+            padding: 1.5rem 1rem;
             svg {
               width: 3rem;
             }

@@ -1,5 +1,20 @@
 @use '../../styles/utilities/variables' as vars;
 
+.btn_contact {
+  padding: 1rem;
+  border: 1px solid vars.$colorBorder;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+// page kontakt
 .btnCopy {
   display: flex;
   align-items: center;
@@ -11,7 +26,6 @@
     box-shadow: none;
     background: inherit;
     cursor: pointer;
-    margin-right: 0.5rem;
 
     .copyIcon {
       width: 1.25rem;
