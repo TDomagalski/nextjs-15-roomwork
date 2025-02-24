@@ -79,7 +79,7 @@ body {
 
         .text {
           position: absolute;
-          width: 300px;
+          width: 250px;
           padding: 1rem;
           z-index: 999;
 
@@ -125,6 +125,16 @@ body {
         padding: 2rem;
         border-radius: 1.5rem;
       }
+
+      .top_page {
+        .page_title {
+          height: auto;
+
+          .text {
+            width: 300px;
+          }
+        }
+      }
     }
   }
 }
@@ -139,7 +149,7 @@ body {
           height: auto;
 
           .text {
-            width: 400px;
+            width: 420px;
 
             h1 {
               font-size: 1.5rem;

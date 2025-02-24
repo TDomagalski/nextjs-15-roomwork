@@ -15,7 +15,7 @@ export default function Home() {
             <h1>
               RoomWork <br /> Kwatery pracownicze
             </h1>
-            {/* <p>krótki opis działalności</p> */}
+            <p>w Słomnikach</p>
           </div>
           <div className='box'></div>
         </div>
