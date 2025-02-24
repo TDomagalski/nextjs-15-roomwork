@@ -43,7 +43,7 @@ export default function Rooms() {
 
       <div className='container_bg'>
         <div className='container_page'>
-          <h4>Znajdz coś dla siebie</h4>
+          <h3>Znajdz coś dla siebie</h3>
           <p>
             Nasze kwatery znajdują się zarówno na parterze, jak i na piętrze. Na
             każdym poziomie dostępna jest w pełni wyposażona kuchnia, gdzie

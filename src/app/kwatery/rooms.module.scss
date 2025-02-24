@@ -34,12 +34,12 @@
   // .rooms_title {}
   .rooms {
     .filter_buttons {
-      justify-content: center;
+      justify-content: flex-start;
+      gap: 2rem;
 
       button {
         padding: 0.25rem;
         font-size: 1rem;
-        margin: 0 1rem;
         transition: 0.3s;
 
         &:hover {

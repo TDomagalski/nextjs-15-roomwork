@@ -34,7 +34,7 @@ export default function Kontakt() {
 
         <div className='container_bg'>
           <div className='container_page'>
-            <h4>Jesteśmy tutaj</h4>
+            <h3>Jesteśmy tutaj</h3>
             <p>
               Nasza lokalizacja w Słomnikach to doskonała opcja dla firm
               prowadzących projekty w okolicy Krakowa, Proszowic, Miechowa,

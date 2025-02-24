@@ -53,7 +53,7 @@ export default function Home() {
                   indywidualnych.
                   <br />
                   Dysponujemy 11 pokojami, mogącymi łącznie pomieścić do 40
-                  Osób. Nasze obiekty są w pełni wyposażone i dostosowane do
+                  Osób. Nasze pokoje są w pełni wyposażone i dostosowane do
                   długoterminowego i krótkoterminowego pobytu. Sprawdź naszą
                   ofertę i wybierz najlepsze rozwiązanie dla siebie lub swojego
                   zespołu!
