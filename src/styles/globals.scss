@@ -23,8 +23,10 @@
   --text-hover-color: #fff;
   --border-color: #304f60;
   --border-hover-color: #71bde5;
+  --btn-bg-color: #0f172a;
 
   --svg-color: #000;
+  --svg-color-white: #fff;
 }
 
 [data-theme='dark'] {
@@ -36,8 +38,10 @@
   --text-hover-color: #0c1222;
   --border-color: #71bde5;
   --border-hover-color: #304f60;
+  --btn-bg-color: #cfcfcf;
 
   --svg-color: #fff;
+  --svg-color-white: #000;
 }
 
 html,

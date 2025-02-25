@@ -98,14 +98,14 @@ export default function Footer() {
               <div className={styles.btn}>
                 <Link href='tel:+48690328659'>
                   <PhoneCallSVG />
-                  <p>690-328-659</p>
+                  <span>690-328-659</span>
                 </Link>
               </div>
 
               <div className={styles.btn}>
                 <Link href='mailto:kwatery@roomwork.pl'>
                   <SentEmailSVG />
-                  <p>kwatery@roomwork.pl</p>
+                  <span>kwatery@roomwork.pl</span>
                 </Link>
               </div>
             </div>

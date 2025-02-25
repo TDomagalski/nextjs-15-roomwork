@@ -15,11 +15,17 @@
     justify-content: space-around;
 
     a {
+      background-color: var(--btn-bg-color);
+      color: var(--text-hover-color);
+      transition: 0.2s;
+
       svg {
-        stroke: var(--svg-color);
+        stroke: var(--svg-color-white);
+        transition: 0.2s;
       }
       span {
         display: none;
+        transition: 0.2s;
       }
     }
   }
@@ -60,6 +66,19 @@
         }
         span {
           display: block;
+        }
+
+        &:hover {
+          background-color: var(--bg-colo);
+          color: var(--text-hover-color);
+
+          svg {
+            stroke: var(--svg-color);
+          }
+          span {
+            display: block;
+            color: var(--text-color);
+          }
         }
       }
     }
