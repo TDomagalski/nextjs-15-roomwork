@@ -18,8 +18,11 @@
   // colors
   --bg-color: #e3e3e3;
   --container-color: #cfcfcf;
-  --border-color: #304f60;
+  --container-hover-color: #0c1222;
   --text-color: #0c1222;
+  --text-hover-color: #fff;
+  --border-color: #304f60;
+  --border-hover-color: #71bde5;
 
   --svg-color: #000;
 }
@@ -28,8 +31,11 @@
   // colors
   --bg-color: #0f172a;
   --container-color: #0c1222;
-  --border-color: #71bde5;
+  --container-hover-color: #cfcfcf;
   --text-color: #fff;
+  --text-hover-color: #0c1222;
+  --border-color: #71bde5;
+  --border-hover-color: #304f60;
 
   --svg-color: #fff;
 }
