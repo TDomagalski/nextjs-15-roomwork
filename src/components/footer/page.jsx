@@ -12,7 +12,7 @@ export default function Footer() {
           <div className={styles.footer_left}>
             <div className={styles.left_company}>
               <h3>RoomWork</h3>
-              <p>kwatery pracownicze w Słomnikach</p>
+              <p>Kwatery pracownicze w Słomnikach</p>
               <p>ul. Krakowska 62d, 32-090 Słomniki</p>
             </div>
 

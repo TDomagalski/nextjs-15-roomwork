@@ -351,6 +351,21 @@ const rooms = [
         url: '/kwatery/kwatery_pracownicze/parter/kwatera6/kwatera_parter6_img2.webp',
         alt: 'Kwatera pracownicza na parterze nr 6 - widok na łóżka i przestrzeń do przechowywania.',
       },
+      {
+        id: 3,
+        url: '/kwatery/kwatery_pracownicze/parter/kwatera6/kwatera_parter6_img3.webp',
+        alt: 'Przestronna kwatera na parterze dla 6 osób, z łazienką i wygodnymi łóżkami.',
+      },
+      {
+        id: 4,
+        url: '/kwatery/kwatery_pracownicze/parter/kwatera6/kwatera_parter6_img4.webp',
+        alt: 'Kwatera pracownicza na parterze nr 6 - widok na łóżka i przestrzeń do przechowywania.',
+      },
+      {
+        id: 5,
+        url: '/kwatery/kwatery_pracownicze/parter/kwatera6/kwatera_parter6_img5.webp',
+        alt: 'Kwatera pracownicza na parterze nr 6 - widok na łóżka i przestrzeń do przechowywania.',
+      },
     ],
     details: [
       { icon: 'RoomPersonIcon', value: '6', label: 'osoby' },
