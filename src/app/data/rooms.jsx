@@ -152,11 +152,22 @@ const rooms = [
     url: '/kwatery/kwatera-5-pietro',
     slug: 'kwatera-5-pietro',
     personRange: '2',
-    description: 'Pokój dla 2 Gości z dwoma łóżkami pojedynczymi.',
+    description:
+      'Pokój dla 2 Gości z dwoma łóżkami pojedynczymi. Prysznic i WC znajduje się po za pokojem.',
     images: [
       {
         id: 1,
         url: '/kwatery/kwatery_pracownicze/pietro/kwatera5/kwatera_pietro5_img1.webp',
+        alt: 'Komfortowa kwatera z ergonomicznym biurkiem i szybkim WiFi. Doskonałe warunki dla osób pracujących zdalnie.',
+      },
+      {
+        id: 2,
+        url: '/kwatery/kwatery_pracownicze/pietro/kwatera5/kwatera_pietro5_img2.webp',
+        alt: 'Komfortowa kwatera z ergonomicznym biurkiem i szybkim WiFi. Doskonałe warunki dla osób pracujących zdalnie.',
+      },
+      {
+        id: 3,
+        url: '/kwatery/kwatery_pracownicze/pietro/kwatera5/kwatera_pietro5_img3.webp',
         alt: 'Komfortowa kwatera z ergonomicznym biurkiem i szybkim WiFi. Doskonałe warunki dla osób pracujących zdalnie.',
       },
     ],

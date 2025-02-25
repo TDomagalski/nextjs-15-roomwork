@@ -162,7 +162,13 @@ export default function Footer() {
               </div>
             </div>
             <div className={styles.right_website}>
-              <p>Projektowanie stron www</p>
+              <span>
+                Projektowanie stron www
+                <Link href='tel:+48664939711'>
+                  <PhoneCallSVG />
+                  <span>664-939-711</span>
+                </Link>
+              </span>
             </div>
           </div>
         </div>
