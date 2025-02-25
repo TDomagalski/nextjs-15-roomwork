@@ -25,14 +25,14 @@ const Navbar = () => {
             RoomWork
           </Link>
         </div>
-        <button
-          className={styles.menuToggle}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label='Otwórz menu'
-        >
-          ☰
-        </button>
         <ThemeToggle />
+        <button
+          className={`${styles.menuToggle} ${menuOpen ? styles.open : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Zamknij menu' : 'Otwórz menu'}
+        >
+          {menuOpen ? '✖' : '☰'}
+        </button>
         <ul className={styles.navLinks}>
           {navItems.map((item) => {
             const isActive = pathname === item.path;

@@ -6,7 +6,8 @@ export default function ThemeToggle() {
 
   return (
     <button onClick={toggleTheme} className='theme-toggle'>
-      {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+      <span className='icon'>{theme === 'light' ? '🌙' : '☀️'}</span>
+      <span className='text'>{theme === 'light' ? 'Dark' : 'Light'}</span>
     </button>
   );
 }

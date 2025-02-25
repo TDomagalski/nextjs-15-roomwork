@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: inherit;
   padding: 0.5rem 1rem;
@@ -9,6 +9,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-right: auto;
 
     a {
       text-decoration: none;
@@ -22,9 +23,15 @@
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 999;
+    margin-left: 0.5rem;
+    color: var(--svg-color);
 
     @media (max-width: 768px) {
       display: block;
+    }
+
+    &.open {
+      scale: -1 1; // Odbija poziomo
     }
   }
 
@@ -68,7 +75,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 640px) {
     padding: 0.5rem 0;
   }
 }
