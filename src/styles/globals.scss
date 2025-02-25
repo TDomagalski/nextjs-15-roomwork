@@ -1,16 +1,43 @@
 // w pliku _index.scss forwordowałem wszystkie pliki ze stylami. Zabieg ten pozwolił mi na nie powielanie @use.
-
 @use './index' as *;
 
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: $backgroundDark;
-  }
+// @media (prefers-color-scheme: dark) {
+//   html,
+//   body {
+//     background-color: $backgroundDark;
+//   }
+// }
+// @media (prefers-color-scheme: light) {
+//   html,
+//   body {
+//     background-color: $backgroundLight;
+//   }
+// }
+
+:root {
+  // colors
+  --bg-color: #fff;
+  --container-color: #cfcfcf;
+  --border-color: #304f60;
+  --text-color: #0c1222;
+
+  --svg-color: #000;
+}
+
+[data-theme='dark'] {
+  // colors
+  --bg-color: #0f172a;
+  --container-color: #0c1222;
+  --border-color: #71bde5;
+  --text-color: #fff;
+
+  --svg-color: #fff;
 }
 
 html,
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   letter-spacing: 1.5;
   line-height: 1.2;
 }
@@ -30,7 +57,6 @@ p {
 }
 
 body {
-  color: $colorWhite;
   font-family: $fontFamilyDefault;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,16 +65,36 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+
   // header,
   // main,
   // footer {}
 
+  // Styl dla przycisku
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--text-color);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--text-color);
+      color: var(--bg-color);
+    }
+  }
+
   header {
-    border-bottom: 1px solid $colorBorder;
+    border-bottom: 1px solid var(--border-color);
   }
   // main {}
   footer {
-    border-top: 1px solid $colorBorder;
+    border-top: 1px solid var(--border-color);
   }
 
   .container {
@@ -59,7 +105,7 @@ body {
     .container_bg {
       margin: 2rem auto;
       padding: 3rem 1rem;
-      background-color: $backgroundDarkDefault;
+      background-color: var(--container-color);
       text-align: center;
 
       .container_page {

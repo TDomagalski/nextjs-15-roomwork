@@ -17,12 +17,12 @@
       padding: 0.25rem;
       font-size: 0.75rem;
       cursor: pointer;
-      border-color: vars.$colorBorder;
+      border-color: var(--border-color);
       border-radius: 5px;
       color: vars.$colorBlack;
 
       &.active {
-        background-color: vars.$backgroundDark;
+        background-color: vars.$bgDark;
         color: vars.$colorWhite;
       }
     }
@@ -43,7 +43,7 @@
         transition: 0.3s;
 
         &:hover {
-          background-color: vars.$backgroundHoverDark;
+          background-color: vars.$bgHoverDark;
           color: vars.$colorWhite;
         }
       }

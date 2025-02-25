@@ -4,14 +4,14 @@
 // SVG Icons
 .a {
   fill: none;
-  stroke: #ffffff;
+  stroke: var(--svg-color);
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .c {
   fill: none;
-  stroke: #ffffff;
+  stroke: var(--svg-color);
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -32,6 +32,7 @@
         margin-right: 1rem;
         svg {
           width: 2rem;
+          stroke: var(--svg-color);
         }
       }
     }
@@ -43,9 +44,9 @@
       align-items: flex-start;
 
       .btn {
-        background-color: vars.$backgroundDark;
+        // background-color: vars.$bgDark;
         flex-basis: 40%;
-        border: 1px solid vars.$colorBorder;
+        border: 1px solid var(--border-color);
         border-radius: 1rem;
 
         a {
@@ -59,6 +60,7 @@
           svg {
             width: 2rem;
             padding: 0.2rem;
+            stroke: var(--svg-color);
           }
 
           p {
@@ -81,7 +83,7 @@
 
         .rooms_side {
           &:last-of-type {
-            border-left: 1px solid rgba(255, 255, 255, 0.226);
+            border-left: 1px solid var(--border-color);
           }
 
           h3 {
@@ -112,7 +114,7 @@
 
     .right_website {
       // background-color: lightgreen;
-      border-top: 1px solid white;
+      border-top: 1px solid var(--border-color);
       padding: 1rem;
     }
   }
@@ -128,7 +130,7 @@
     gap: 2rem;
 
     .footer_left {
-      border-right: 1px solid white;
+      border-right: 1px solid var(--border-color);
 
       // .left_company {}
       // .left_socials {}

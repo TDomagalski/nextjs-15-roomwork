@@ -1,6 +1,6 @@
 export default function RoomPersonIcon() {
   return (
-    <svg viewBox='0 0 512 512' fill='#000000'>
+    <svg viewBox='0 0 512 512'>
       <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
       <g
         id='SVGRepo_tracerCarrier'

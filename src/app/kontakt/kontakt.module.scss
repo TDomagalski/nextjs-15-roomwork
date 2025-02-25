@@ -37,9 +37,9 @@
       gap: 2rem;
 
       .contactBtn {
-        background-color: vars.$backgroundDark;
+        // background-color: vars.$bgDark;
         flex-basis: 40%;
-        border: 1px solid vars.$colorBorder;
+        border: 1px solid var(--border-color);
         border-radius: 1rem;
         text-align: center;
 
@@ -53,6 +53,15 @@
           svg {
             width: 2rem;
             padding: 0.2rem;
+            fill: var(--svg-color);
+            stroke: var(--svg-color);
+
+            g {
+              path {
+                stroke: var(--svg-color);
+                fill: none;
+              }
+            }
           }
 
           p {

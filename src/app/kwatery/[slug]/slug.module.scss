@@ -15,8 +15,14 @@
       div {
         text-align: center;
         svg {
-          fill: white;
           width: 0.75rem;
+          stroke: var(--svg-color);
+          fill: var(--svg-color);
+          g {
+            path {
+              stroke: var(--svg-color);
+            }
+          }
         }
       }
     }
@@ -83,7 +89,7 @@
     transition: color 0.3s;
 
     &:hover {
-      color: vars.$backgroundHoverDark;
+      color: vars.$bgHoverDark;
     }
   }
 

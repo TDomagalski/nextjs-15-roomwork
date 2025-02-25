@@ -4,8 +4,8 @@
 .room {
   margin: 2rem 0;
   padding: 0.5rem;
-  background-color: #0f172a;
-  border: 1px solid rgb(113, 189, 229);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
   border-radius: 1.5rem;
 
   .room_img {
@@ -53,8 +53,14 @@
           svg {
             width: 16px;
             height: 16px;
-            fill: vars.$colorWhite;
             margin-right: 0.25rem;
+            stroke: var(--svg-color);
+            fill: var(--svg-color);
+            g {
+              path {
+                stroke: var(--svg-color);
+              }
+            }
           }
 
           .span_container {

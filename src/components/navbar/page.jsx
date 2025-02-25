@@ -2,6 +2,9 @@
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
+
+import ThemeToggle from '@components/Theme/ThemeToggle/ThemeToggle';
+
 import styles from './navbar.module.scss';
 
 const Navbar = () => {
@@ -29,6 +32,7 @@ const Navbar = () => {
         >
           ☰
         </button>
+        <ThemeToggle />
         <ul className={styles.navLinks}>
           {navItems.map((item) => {
             const isActive = pathname === item.path;

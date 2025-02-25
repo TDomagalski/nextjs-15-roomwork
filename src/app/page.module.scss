@@ -15,7 +15,9 @@
     justify-content: space-around;
 
     a {
-      // svg {}
+      svg {
+        stroke: var(--svg-color);
+      }
       span {
         display: none;
       }
