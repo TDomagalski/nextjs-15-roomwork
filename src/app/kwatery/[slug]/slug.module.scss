@@ -37,7 +37,7 @@
 
     .room_img {
       position: relative;
-      border: 1px solid vars.$colorBorder;
+      border: 1px solid var(--border-color);
       cursor: pointer;
       transition: transform 0.3s;
 
