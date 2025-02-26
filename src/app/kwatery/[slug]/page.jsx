@@ -1,9 +1,6 @@
-'use client';
 import rooms from '../../data/rooms';
-import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Head from 'next/head';
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slug.module.scss';
 
@@ -19,38 +16,18 @@ const iconMap = {
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 
-export default function RoomDetail() {
-  const params = useParams();
-  const slug = params?.slug;
+// 🔹 Generowanie statycznych ścieżek dla Next.js
+export async function generateStaticParams() {
+  return rooms.map((room) => ({
+    slug: room.slug,
+  }));
+}
+
+export default function RoomDetail({ params }) {
+  const { slug } = params;
 
   // Znajdź pokój na podstawie slug
   const room = rooms.find((r) => r.slug === slug);
-
-  // Stan dla full screen
-  const [isFullScreen, setIsFullScreen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Funkcje zmiany zdjęć
-  const openFullScreen = (index) => {
-    setCurrentImageIndex(index);
-    setIsFullScreen(true);
-  };
-
-  const closeFullScreen = () => {
-    setIsFullScreen(false);
-  };
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === room.images.length - 1 ? 0 : prevIndex + 1,
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? room.images.length - 1 : prevIndex - 1,
-    );
-  };
 
   if (!room) {
     return <p>Pokój nie znaleziony</p>;
@@ -80,8 +57,8 @@ export default function RoomDetail() {
               alt={room.name}
               width={2016}
               height={1134}
-              loading='lazy' // Można jawnie ustawić
-              priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
+              loading='lazy'
+              priority={false}
             />
           </div>
         </div>
@@ -105,11 +82,7 @@ export default function RoomDetail() {
 
               <div className={styles.room_imgs}>
                 {room.images.map((img, index) => (
-                  <div
-                    key={img.id}
-                    className={styles.room_img}
-                    onClick={() => openFullScreen(index)}
-                  >
+                  <div key={img.id} className={styles.room_img}>
                     <Image
                       src={img.url}
                       alt={img.alt}
@@ -123,37 +96,6 @@ export default function RoomDetail() {
           </div>
         </div>
       </div>
-
-      <AnimatePresence>
-        {isFullScreen && (
-          <motion.div
-            className={styles.fullscreen}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className={styles.fullscreen_content}>
-              <button className={styles.close_btn} onClick={closeFullScreen}>
-                ✖
-              </button>
-              <button className={styles.prev_btn} onClick={prevImage}>
-                &#8592;
-              </button>
-              <div className={styles.fullscreen_img}>
-                <Image
-                  src={room.images[currentImageIndex].url}
-                  alt={room.images[currentImageIndex].alt}
-                  fill
-                  style={{ objectFit: 'contain' }}
-                />
-              </div>
-              <button className={styles.next_btn} onClick={nextImage}>
-                &#8594;
-              </button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 }
