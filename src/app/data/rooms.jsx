@@ -4,6 +4,7 @@ const rooms = [
     name: 'Kwatera 1 na piętrze',
     url: '/kwatery/kwatera-1-pietro',
     slug: 'kwatera-1-pietro',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -42,6 +43,7 @@ const rooms = [
     name: 'Kwatera 2 na piętrze',
     url: '/kwatery/kwatera-2-pietro',
     slug: 'kwatera-2-pietro',
+    updateAt: '2004-02-20',
     personRange: '2',
     description:
       'Pokój dla 2 lub 3 Gości z jednym łóżkiem pojedynczym i jednym piętrowym. Prywatna łazienka',
@@ -75,6 +77,7 @@ const rooms = [
     name: 'Kwatera 3 na piętrze',
     url: '/kwatery/kwatera-3-pietro',
     slug: 'kwatera-3-pietro',
+    updateAt: '2004-02-20',
     personRange: '2',
     description:
       'Pokój dla 2 lub 3 Gości z jednym łóżkiem pojedynczym i jednym piętrowym. Prywatna łazienka',
@@ -113,6 +116,7 @@ const rooms = [
     name: 'Kwatera 4 na piętrze',
     url: '/kwatery/kwatera-4-pietro',
     slug: 'kwatera-4-pietro',
+    updateAt: '2004-02-20',
     personRange: '2',
     description:
       'Pokój dla 2 Gości z dwoma łóżkami pojedynczymi. Prywatna łazienka',
@@ -151,6 +155,7 @@ const rooms = [
     name: 'Kwatera 5 na piętrze',
     url: '/kwatery/kwatera-5-pietro',
     slug: 'kwatera-5-pietro',
+    updateAt: '2004-02-20',
     personRange: '2',
     description:
       'Pokój dla 2 Gości z dwoma łóżkami pojedynczymi. Prysznic i WC znajduje się po za pokojem.',
@@ -183,6 +188,7 @@ const rooms = [
     name: 'Kwatera 1 na parterze',
     url: '/kwatery/kwatera-1-parter',
     slug: 'kwatera-1-parter',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -216,6 +222,7 @@ const rooms = [
     name: 'Kwatera 2 na parterze',
     url: '/kwatery/kwatera-2-parter',
     slug: 'kwatera-2-parter',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -249,6 +256,7 @@ const rooms = [
     name: 'Kwatera 3 na parterze',
     url: '/kwatery/kwatera-3-parter',
     slug: 'kwatera-3-parter',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -282,6 +290,7 @@ const rooms = [
     name: 'Kwatera 4 na parterze',
     url: '/kwatery/kwatera-4-parter',
     slug: 'kwatera-4-parter',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -315,6 +324,7 @@ const rooms = [
     name: 'Kwatera 5 na parterze',
     url: '/kwatery/kwatera-5-parter',
     slug: 'kwatera-5-parter',
+    updateAt: '2004-02-20',
     personRange: '3',
     description:
       'Pokój dla 3 lub 4 Gości z dwoma łóżkami pojedynczymi i jednym piętrowym. Prywatna łazienka',
@@ -348,6 +358,7 @@ const rooms = [
     name: 'Kwatera 6 na parterze',
     url: '/kwatery/kwatera-6-parter',
     slug: 'kwatera-6-parter',
+    updateAt: '2004-02-20',
     personRange: '6',
     description:
       'Pokój dla 6 lub 8 Gości z czterema łóżkami piętrowymi. Prywatna łazienka',
