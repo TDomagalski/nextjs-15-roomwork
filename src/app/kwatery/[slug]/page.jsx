@@ -1,7 +1,7 @@
+import dynamic from 'next/dynamic';
 import rooms from '../../data/rooms';
 import Image from 'next/image';
 import Head from 'next/head';
-import { motion, AnimatePresence } from 'framer-motion';
 import styles from './slug.module.scss';
 
 // Import ikon
@@ -9,24 +9,22 @@ import RoomPersonIcon from '@public/kwatery/room_equipment/RoomPersonIcon';
 import RoomBedIcon from '@public/kwatery/room_equipment/RoomBedIcon';
 import RoomBathroomIcon from '@public/kwatery/room_equipment/RoomBathroomIcon';
 
-// Mapa ikon (aby używać dynamicznie)
 const iconMap = {
   RoomPersonIcon: <RoomPersonIcon />,
   RoomBedIcon: <RoomBedIcon />,
   RoomBathroomIcon: <RoomBathroomIcon />,
 };
 
-// 🔹 Generowanie statycznych ścieżek dla Next.js
+// const RoomDetailClient = dynamic(() => import('../../data/rooms'), {
+//   ssr: false,
+// });
+
 export async function generateStaticParams() {
-  return rooms.map((room) => ({
-    slug: room.slug,
-  }));
+  return rooms.map((room) => ({ slug: room.slug }));
 }
 
-export default function RoomDetail({ params }) {
-  const { slug } = params;
-
-  // Znajdź pokój na podstawie slug
+export default async function RoomDetail({ params }) {
+  const { slug } = await params;
   const room = rooms.find((r) => r.slug === slug);
 
   if (!room) {
@@ -44,25 +42,6 @@ export default function RoomDetail({ params }) {
       </Head>
 
       <div className='container'>
-        <div className='top_page'>
-          <div className='page_title'>
-            <div className='text'>
-              <h1>RoomWork - Kwatery pracownicze</h1>
-            </div>
-            <div className='box'></div>
-          </div>
-          <div className='page_img'>
-            <Image
-              src={room.roomImg}
-              alt={room.name}
-              width={2016}
-              height={1134}
-              loading='lazy'
-              priority={false}
-            />
-          </div>
-        </div>
-
         <div className='container_bg'>
           <div className='container_page'>
             <div className={styles.room}>
@@ -83,12 +62,43 @@ export default function RoomDetail({ params }) {
               <div className={styles.room_imgs}>
                 {room.images.map((img, index) => (
                   <div key={img.id} className={styles.room_img}>
-                    <Image
-                      src={img.url}
-                      alt={img.alt}
-                      width={400}
-                      height={300}
-                    />
+                    <a href={`#fullscreen-${index}`}>
+                      <Image
+                        src={img.url}
+                        alt={img.alt}
+                        width={400}
+                        height={300}
+                      />
+                    </a>
+                    <div
+                      id={`fullscreen-${index}`}
+                      className={styles.fullscreen}
+                    >
+                      <a href='#' className={styles.close_btn}>
+                        &times;
+                      </a>
+                      <a
+                        href={`#fullscreen-${(index - 1 + room.images.length) % room.images.length}`}
+                        className={styles.prev_btn}
+                      >
+                        &#8249;
+                      </a>
+                      <div className={styles.fullscreen_content}>
+                        <Image
+                          src={img.url}
+                          alt={img.alt}
+                          width={1200}
+                          height={800}
+                          className={styles.fullscreen_img}
+                        />
+                      </div>
+                      <a
+                        href={`#fullscreen-${(index + 1) % room.images.length}`}
+                        className={styles.next_btn}
+                      >
+                        &#8250;
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>
