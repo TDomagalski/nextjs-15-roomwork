@@ -96,6 +96,36 @@
       color: #ccc;
     }
   }
+
+  .close_btn,
+  .prev_btn,
+  .next_btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s;
+  }
+
+  .close_btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .prev_btn {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .next_btn {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 // ~~ MEDIA QUERIES
