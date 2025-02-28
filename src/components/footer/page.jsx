@@ -164,9 +164,9 @@ export default function Footer() {
             <div className={styles.right_website}>
               <span>
                 Projektowanie stron www
-                <Link href='tel:+48664939711'>
+                <Link href='tel:+48690328659'>
                   <PhoneCallSVG />
-                  <span>664-939-711</span>
+                  <span>690-328-659</span>
                 </Link>
               </span>
             </div>
