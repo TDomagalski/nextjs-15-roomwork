@@ -35,8 +35,9 @@ export default function Rooms() {
             alt='img'
             width={2016}
             height={1134}
-            loading='lazy' // Można jawnie ustawić
-            priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
+            loading='lazy' // Wymusza leniwe ładowanie
+            priority={false} // Zapewnia, że Next.js nie wymusi eager loading
+            unoptimized // Zapobiega problemom z eksportem
           />
         </div>
       </div>

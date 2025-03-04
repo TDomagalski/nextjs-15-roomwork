@@ -42,6 +42,27 @@ export default async function RoomDetail({ params }) {
       </Head>
 
       <div className='container'>
+        <div className='top_page'>
+          <div className='page_title'>
+            <div className='text'>
+              <h1>Pokoje</h1>
+              <p>Do wynajęcia</p>
+            </div>
+            <div className='box'></div>
+          </div>
+          <div className='page_img'>
+            <Image
+              src={room.roomImg}
+              alt='Pokoje pracownicze do wynajęcia w Słomnikach'
+              width={2016}
+              height={1134}
+              loading='lazy' // Wymusza leniwe ładowanie
+              priority={false} // Zapewnia, że Next.js nie wymusi eager loading
+              unoptimized // Zapobiega problemom z eksportem
+            />
+          </div>
+        </div>
+
         <div className='container_bg'>
           <div className='container_page'>
             <div className={styles.room}>

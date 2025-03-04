@@ -24,10 +24,11 @@ export default function Kontakt() {
             <Image
               src='/global/patio.webp'
               alt='img'
-              width={1072}
-              height={712}
-              loading='lazy' // Można jawnie ustawić
-              priority={false} // Zapewnia lazy loading (domyślnie dla obrazów poniżej viewportu)
+              width={2016}
+              height={1134}
+              loading='lazy' // Wymusza leniwe ładowanie
+              priority={false} // Zapewnia, że Next.js nie wymusi eager loading
+              unoptimized // Zapobiega problemom z eksportem
             />
           </div>
         </div>
