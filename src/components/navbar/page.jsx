@@ -13,8 +13,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Strona główna', path: '/' },
-    { name: 'Kwatery', path: '/kwatery' },
-    { name: 'Kontakt', path: '/kontakt' },
+    { name: 'Kwatery', path: '/kwatery/' },
+    { name: 'Kontakt', path: '/kontakt/' },
   ];
 
   return (
