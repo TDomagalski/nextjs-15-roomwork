@@ -54,8 +54,8 @@ export default async function RoomDetail({ params }) {
             <Image
               src={room.roomImg}
               alt='Pokoje pracownicze do wynajęcia w Słomnikach'
-              width={2016}
-              height={1134}
+              width={1512}
+              height={851}
               loading='lazy' // Wymusza leniwe ładowanie
               priority={false} // Zapewnia, że Next.js nie wymusi eager loading
               unoptimized // Zapobiega problemom z eksportem

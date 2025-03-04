@@ -33,8 +33,8 @@ export default function Rooms() {
           <Image
             src='/global/korytarz-parter_img1.webp'
             alt='img'
-            width={2016}
-            height={1134}
+            width={1512}
+            height={851}
             loading='lazy' // Wymusza leniwe ładowanie
             priority={false} // Zapewnia, że Next.js nie wymusi eager loading
             unoptimized // Zapobiega problemom z eksportem
