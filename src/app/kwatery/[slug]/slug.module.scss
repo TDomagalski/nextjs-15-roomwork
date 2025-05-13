@@ -131,13 +131,13 @@
 // ~~ MEDIA QUERIES
 // @media (min-width: 640px) {}
 @media (min-width: 768px) {
-  .room_detail {
+  .room {
     .room_details {
       .detail {
-        font-size: 1rem;
+        font-size: 1.25rem;
         div {
           svg {
-            width: 1rem;
+            width: 1.25rem;
           }
         }
       }

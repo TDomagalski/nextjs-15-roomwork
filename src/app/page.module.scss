@@ -1,9 +1,30 @@
-// .frontpage_info {
-//   .info_container {
-//     .info_title {}
-//     .info_slogan {}
-//   }
-// }
+.frontpage_info {
+  .info_container {
+    .info_title {
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+    .info_slogan {
+      margin-bottom: 0.75rem;
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.info_container {
+  .frontpage_text {
+    h3 {
+      margin-bottom: 0.75rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
 
 .frontpage_contact {
   .contact_text {

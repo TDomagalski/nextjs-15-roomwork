@@ -25,7 +25,7 @@ export default function Home() {
             alt='img'
             width={1512}
             height={851}
-            // loading='lazy' // Wymusza leniwe ładowanie
+            loading='lazy' // Wymusza leniwe ładowanie
             priority={false} // Zapewnia, że Next.js nie wymusi eager loading
             unoptimized // Zapobiega problemom z eksportem
           />
@@ -40,15 +40,15 @@ export default function Home() {
                 <h2>RoomWork</h2>
               </div>
               <div className={styles.info_slogan}>
-                <h3>Go work and relax in RoomWork</h3>
+                <span>Go work and relax in RoomWork</span>
               </div>
             </div>
             <div className={styles.info_container}>
               <div className={styles.frontpage_text}>
-                <h4>
+                <h3>
                   Komfortowe kwatery pracownicze w Słomnikach - idealne miejsce
                   dla Firm, Ekip pracowniczych jak również Osób prywatnych.
-                </h4>
+                </h3>
                 <p>
                   Szukasz wygodnego i dobrze wyposażonego miejsca noclegowego
                   dla swoich pracowników w Słomnikach? Oferujemy&nbsp;elastyczne

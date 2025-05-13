@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import rooms from '../../data/rooms';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -45,8 +44,8 @@ export default async function RoomDetail({ params }) {
         <div className='top_page'>
           <div className='page_title'>
             <div className='text'>
-              <h1>Pokoje</h1>
-              <p>Do wynajęcia</p>
+              <h1>Pokoje do wynajęcia</h1>
+              <span>w Słomnikach</span>
             </div>
             <div className='box'></div>
           </div>
@@ -66,7 +65,7 @@ export default async function RoomDetail({ params }) {
         <div className='container_bg'>
           <div className='container_page'>
             <div className={styles.room}>
-              <h3 className={styles.room_name}>{room.name}</h3>
+              <h2 className={styles.room_name}>{room.name}</h2>
               <p>{room.description}</p>
 
               <div className={styles.room_details}>
