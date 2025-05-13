@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import { ThemeProvider } from '@components/Theme/ThemeContext/ThemeContext';
 import Navbar from '@components/navbar/page';
 import Footer from '@components/footer/page';
@@ -35,6 +37,9 @@ export default function RootLayout({ children }) {
           </footer>
         </body>
       </ThemeProvider>
+      {process.env.NODE_ENV === 'production' && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+      )}
     </html>
   );
 }
