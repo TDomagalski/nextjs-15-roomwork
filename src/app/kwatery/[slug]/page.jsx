@@ -56,7 +56,7 @@ export default async function RoomDetail({ params }) {
               alt='Pokoje pracownicze do wynajęcia w Słomnikach'
               width={1512}
               height={851}
-              loading='lazy' // Wymusza leniwe ładowanie
+              // loading='lazy' // Wymusza leniwe ładowanie
               priority={false} // Zapewnia, że Next.js nie wymusi eager loading
               unoptimized // Zapobiega problemom z eksportem
             />
@@ -89,6 +89,7 @@ export default async function RoomDetail({ params }) {
                         alt={img.alt}
                         width={400}
                         height={300}
+                        loading='lazy' // Wymusza leniwe ładowanie
                       />
                     </a>
                     <div
